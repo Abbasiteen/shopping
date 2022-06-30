@@ -1,0 +1,12 @@
+.navbarbody{
+    display: flex;
+    justify-content: flex-end;
+    margin: auto;
+    margin-right: 130px;
+    width: 100%;
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+.navbarbody span{
+    margin-right: 50px;
+}
