@@ -3,6 +3,7 @@ import { BsTelephone } from 'react-icons/bs'
 import { FaMapMarkerAlt } from 'react-icons/fa'
 import { RiMenu4Line } from 'react-icons/ri'
 import { FiSearch } from 'react-icons/fi'
+import { FaShoppingBasket } from 'react-icons/fa'
 import logo from '../img/logo.png'
 import "../css/Navbar.css"
 export default class Navbar extends Component {
@@ -28,8 +29,12 @@ export default class Navbar extends Component {
     <div className='input'>
       <input className='header_input' placeholder='Что желаете найти?'/><FiSearch/>
     </div>
+    <div className='basket'>
+      <span><FaShoppingBasket/>Корзина</span>
+    </div>
   </div>
 </div>
+
       </div>
     )
   }

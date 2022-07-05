@@ -9,8 +9,11 @@
     /* margin: auto; */
     /* margin-right: 130px; */
     margin-top: -40px;
-    margin-left: 1715px;
-    margin-bottom: 20px;
+    /* margin-left: 1715px; */
+    /* margin-bottom: 20px; */
+    position: absolute;
+    /* left: 0; */
+    right: .1%;
     width: 200px;
     /* height: 102px; */
 }
@@ -18,7 +21,7 @@
     color: red;
 }
 .main_text{
-    width: 8vw;
+    width: 10vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -33,7 +36,7 @@
 } 
 .header_input{
     width: 50vw;
-    height: 54px;
     border-radius: 30px;
     border: 1px solid #eee;
+    padding: 20px;
 }
