@@ -8,8 +8,8 @@ export default class App extends Component {
     return (
       <div>
         <Navbar/>
-        <Dashboard/>
-        <Error/>
+        {/* <Dashboard/> */}
+        {/* <Error/> */}
       </div>
     )
   }
