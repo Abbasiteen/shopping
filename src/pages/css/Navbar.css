@@ -23,4 +23,17 @@
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
+}
+.nav{
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5% auto;
 } 
+.header_input{
+    width: 50vw;
+    height: 54px;
+    border-radius: 30px;
+    border: 1px solid #eee;
+}
