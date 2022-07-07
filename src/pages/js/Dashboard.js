@@ -1,7 +1,15 @@
 import React, { Component } from 'react';
 import {Carousel} from 'react-bootstrap';
+import { TbShoppingCartPlus } from 'react-icons/tb'
+import card_img from '../img/camera.png'
+import Select from 'react-select'
+import '../css/Dashboard.css'
 // import 'bootstrap/dist/css/bootstrap.min.css';
-import { AiOutlineShoppingCart } from 'react-icons/ai';
+const options = [
+  { value: 'chocolate', label: 'Chocolate' },
+  { value: 'strawberry', label: 'Strawberry' },
+  { value: 'vanilla', label: 'Vanilla' }
+]
 export default class Dashboard extends Component {
   render() {
     return (
@@ -47,10 +55,89 @@ export default class Dashboard extends Component {
 </Carousel>
           </div>
         </div> */}
+        <div className='Новинки'>
+          <h1>Новинки</h1>
         <div className='cards'>
-          <span><AiOutlineShoppingCart/></span>
+          <div className='card'>
+            <img src={card_img} alt='' className='card_img'/>
+            <p className='card_name'>Cовместимость со вспышками — AD200/AD200Pro</p>
+            <p className='price'>62 392,23 Сум</p>
+            <Select className='amount' options={options} />
+            <div className='card_btn'>
+              <button className='btn'><TbShoppingCartPlus/></button>
+            </div>
+          </div>
+          <div className='card'>
+            <img src={card_img} alt='' className='card_img'/>
+            <p className='card_name'>Cовместимость со вспышками — AD200/AD200Pro</p>
+            <p className='price'>62 392,23 Сум</p>
+            <Select className='amount' options={options} />
+            <div className='card_btn'>
+              <button className='btn'><TbShoppingCartPlus/></button>
+            </div>
+          </div>
+          <div className='card'>
+            <img src={card_img} alt='' className='card_img'/>
+            <p className='card_name'>Cовместимость со вспышками — AD200/AD200Pro</p>
+            <p className='price'>62 392,23 Сум</p>
+            <Select className='amount' options={options} />
+            <div className='card_btn'>
+              <button className='btn'><TbShoppingCartPlus/></button>
+            </div>
+          </div>
+          <div className='card'>
+            <img src={card_img} alt='' className='card_img'/>
+            <p className='card_name'>Cовместимость со вспышками — AD200/AD200Pro</p>
+            <p className='price'>62 392,23 Сум</p>
+            <Select className='amount' options={options} />
+            <div className='card_btn'>
+              <button className='btn'><TbShoppingCartPlus/></button>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div className='Новинки'>
+          <h1>Новинки</h1>
+        <div className='cards'>
+          <div className='card'>
+            <img src={card_img} alt='' className='card_img'/>
+            <p className='card_name'>Cовместимость со вспышками — AD200/AD200Pro</p>
+            <p className='price'>62 392,23 Сум</p>
+            <Select className='amount' options={options} />
+            <div className='card_btn'>
+              <button className='btn'><TbShoppingCartPlus/></button>
+            </div>
+          </div>
+          <div className='card'>
+            <img src={card_img} alt='' className='card_img'/>
+            <p className='card_name'>Cовместимость со вспышками — AD200/AD200Pro</p>
+            <p className='price'>62 392,23 Сум</p>
+            <Select className='amount' options={options} />
+            <div className='card_btn'>
+              <button className='btn'><TbShoppingCartPlus/></button>
+            </div>
+          </div>
+          <div className='card'>
+            <img src={card_img} alt='' className='card_img'/>
+            <p className='card_name'>Cовместимость со вспышками — AD200/AD200Pro</p>
+            <p className='price'>62 392,23 Сум</p>
+            <Select className='amount' options={options} />
+            <div className='card_btn'>
+              <button className='btn'><TbShoppingCartPlus/></button>
+            </div>
+          </div>
+          <div className='card'>
+            <img src={card_img} alt='' className='card_img'/>
+            <p className='card_name'>Cовместимость со вспышками — AD200/AD200Pro</p>
+            <p className='price'>62 392,23 Сум</p>
+            <Select className='amount' options={options} />
+            <div className='card_btn'>
+              <button className='btn'><TbShoppingCartPlus/></button>
+            </div>
+          </div>
+        </div>
         </div>
       </div>
     )
-  }
+  } 
 }

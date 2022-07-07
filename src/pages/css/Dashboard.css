@@ -1,0 +1,55 @@
+.cards{
+    width: 87vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15% auto; 
+}
+.Новинки h1{
+    margin-top: -6%;
+    margin-left: 6%;
+    position: absolute;
+}
+.card{
+    width: 302px;
+    height: 559px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    -webkit-box-shadow: 0px 0px 3px 1px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 0px 3px 1px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 0px 3px 1px rgba(34, 60, 80, 0.2);
+}
+.card_img{
+    padding: 10px;
+}
+.card_name{
+    width: 240px;
+    font-size: 36x;
+    font-weight: bold;
+    margin: 27px;
+}
+.price{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 27px;
+}
+.amount{
+    width: 92px;
+    height: 30px;
+    border-radius: 80px;
+    margin: 27px;
+    /* padding: 10px; */
+}
+.css-1s2u09g-control{
+    border-radius: 50px !important;
+}
+.btn{
+    border: none;
+    background-color: palevioletred;
+    width: 50px;
+    height: 50px;
+    border-radius: 40px;
+    color: #fff;
+    font-size: 25px;
+}

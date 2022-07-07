@@ -40,3 +40,9 @@
     border: 1px solid #eee;
     padding: 20px;
 }
+.FiSearch{
+    position: absolute;
+    right: 270px;
+    top: 138px;
+    font-size: 33px;
+}
