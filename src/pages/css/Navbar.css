@@ -4,18 +4,11 @@
     background-color: #F8F8F8;
 }
 .navbarbody{
-    /* display: flex; */
     justify-content: flex-end;
-    /* margin: auto; */
-    /* margin-right: 130px; */
     margin-top: -40px;
-    /* margin-left: 1715px; */
-    /* margin-bottom: 20px; */
     position: absolute;
-    /* left: 0; */
     right: .1%;
     width: 200px;
-    /* height: 102px; */
 }
 .zakazat{
     color: red;
@@ -40,9 +33,9 @@
     border: 1px solid #eee;
     padding: 20px;
 }
-.FiSearch{
+/* .FiSearch{
     position: absolute;
     right: 270px;
     top: 138px;
     font-size: 33px;
-}
+} */

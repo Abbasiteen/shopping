@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Carousel} from 'react-bootstrap';
+// import {Carousel} from 'react-bootstrap';
 import { TbShoppingCartPlus } from 'react-icons/tb'
 import card_img from '../img/camera.png'
 import Select from 'react-select'
@@ -56,7 +56,7 @@ export default class Dashboard extends Component {
           </div>
         </div> */}
         <div className='Новинки'>
-          <h1>Новинки</h1>
+          <p className='Новинки_title'>Новинки</p>
         <div className='cards'>
           <div className='card'>
             <img src={card_img} alt='' className='card_img'/>
@@ -96,11 +96,15 @@ export default class Dashboard extends Component {
           </div>
         </div>
         </div>
-        <div className='Новинки'>
-          <h1>Новинки</h1>
-        <div className='cards'>
+        <div className='Скидки'>
+        <div className='Скидки_title'>
+          <p className='Скидки_title_t'>Скидки</p>
+          <p className='Скидки_title_i'>%</p>
+        </div>
+        <div className='Скидки_cards'>
           <div className='card'>
             <img src={card_img} alt='' className='card_img'/>
+            <p className='card_discount'>12%</p>
             <p className='card_name'>Cовместимость со вспышками — AD200/AD200Pro</p>
             <p className='price'>62 392,23 Сум</p>
             <Select className='amount' options={options} />
@@ -110,6 +114,7 @@ export default class Dashboard extends Component {
           </div>
           <div className='card'>
             <img src={card_img} alt='' className='card_img'/>
+            <p className='card_discount'>12%</p>
             <p className='card_name'>Cовместимость со вспышками — AD200/AD200Pro</p>
             <p className='price'>62 392,23 Сум</p>
             <Select className='amount' options={options} />
@@ -119,6 +124,7 @@ export default class Dashboard extends Component {
           </div>
           <div className='card'>
             <img src={card_img} alt='' className='card_img'/>
+            <p className='card_discount'>12%</p>
             <p className='card_name'>Cовместимость со вспышками — AD200/AD200Pro</p>
             <p className='price'>62 392,23 Сум</p>
             <Select className='amount' options={options} />
@@ -128,6 +134,7 @@ export default class Dashboard extends Component {
           </div>
           <div className='card'>
             <img src={card_img} alt='' className='card_img'/>
+            <p className='card_discount'>12%</p>
             <p className='card_name'>Cовместимость со вспышками — AD200/AD200Pro</p>
             <p className='price'>62 392,23 Сум</p>
             <Select className='amount' options={options} />
@@ -136,6 +143,9 @@ export default class Dashboard extends Component {
             </div>
           </div>
         </div>
+        </div>
+        <div className='famous'>
+          <p className='famous_title'>Популярные категории</p>
         </div>
       </div>
     )
