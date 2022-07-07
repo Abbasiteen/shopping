@@ -49,7 +49,7 @@
     width: 92px;
     height: 30px;
     border-radius: 80px;
-    margin: 27px;
+    /* margin: 27px; */
     /* padding: 10px; */
 }
 .css-1s2u09g-control{
@@ -91,6 +91,13 @@
 }
 .card_discounts{
     color: red;
+}
+.card_footer{
+    width: 257px;
+    margin: -16px 29px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .famous_title{
     font-size: 2em;

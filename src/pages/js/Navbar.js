@@ -10,16 +10,16 @@ export default class Navbar extends Component {
   render() {
     return (
       <div>
-<div className='navbar'>
-  <div className='main_text'>
+<div className='navbars'>
+  <div className='main_textss'>
     <p>О нас</p>
     <span><FaMapMarkerAlt/>Ташкент</span>
   </div>
-    <div className='navbarbody'>
+    <div className='navbarbodys'>
        <span> <BsTelephone/>+99896487223</span>
        <span><p className='zakazat'>Заказать звонок</p></span>
     </div>
-  <div className='nav'>
+  <div className='navs'>
     <div className='logo'>
       <img src={logo} alt=""className='logo-img'/>
     </div>
@@ -27,7 +27,7 @@ export default class Navbar extends Component {
       <span><RiMenu4Line/>Каталог</span>
     </div>
     <div className='input'>
-      <input className='header_input' placeholder='Что желаете найти?'/>
+      <input className='header_inputs' placeholder='Что желаете найти?'/>
       <span className='FiSearch'><FiSearch/></span> 
     </div>
     <div className='basket'>

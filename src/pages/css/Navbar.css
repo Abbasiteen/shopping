@@ -1,9 +1,9 @@
-.navbar{
+.navbars{
     width: 100vw;
     height: 102px;
     background-color: #F8F8F8;
 }
-.navbarbody{
+.navbarbodys{
     justify-content: flex-end;
     margin-top: -40px;
     position: absolute;
@@ -13,21 +13,21 @@
 .zakazat{
     color: red;
 }
-.main_text{
-    width: 10vw;
+.main_textss{
+    width: 11vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
 }
-.nav{
+.navs{
     width: 90vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 5% auto;
 } 
-.header_input{
+.header_inputs{
     width: 50vw;
     border-radius: 30px;
     border: 1px solid #eee;
