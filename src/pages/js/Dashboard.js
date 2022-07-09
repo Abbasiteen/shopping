@@ -4,7 +4,11 @@ import { TbShoppingCartPlus } from 'react-icons/tb'
 import card_img from '../img/camera.png'
 import carousel from '../img/carousel.png'
 import camer from '../img/camer.png'
+import apple from '../img/apple.png'
+import samsung from '../img/samsung.png'
+import huawe from '../img/huawe.png'
 import artel from '../img/artel.png'
+import mi from '../img/mi.png'
 import Select from 'react-select'
 import '../css/Dashboard.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -104,7 +108,7 @@ export default class Dashboard extends Component {
           <p className='Скидки_title_i'>%</p>
         </div>
         <div className='Скидки_cards'>
-          <div className='Новинки_card'>
+          <div className='Скидки_card'>
             <img src={card_img} alt='' className='card_imgg'/>
             <p className='card_discounts'>12%</p>
             <p className='card_names'>Cовместимость со вспышками — AD200/AD200Pro</p>
@@ -116,7 +120,7 @@ export default class Dashboard extends Component {
               </div>
             </div>
           </div>
-          <div className='Новинки_card'>
+          <div className='Скидки_card'>
             <img src={card_img} alt='' className='card_imgg'/>
             <p className='card_discounts'>12%</p>
             <p className='card_names'>Cовместимость со вспышками — AD200/AD200Pro</p>
@@ -128,7 +132,7 @@ export default class Dashboard extends Component {
               </div>
             </div>
           </div>
-          <div className='Новинки_card'>
+          <div className='Скидки_card'>
             <img src={card_img} alt='' className='card_imgg'/>
             <p className='card_discounts'>12%</p>
             <p className='card_names'>Cовместимость со вспышками — AD200/AD200Pro</p>
@@ -140,7 +144,7 @@ export default class Dashboard extends Component {
               </div>
             </div>
           </div>
-          <div className='Новинки_card'>
+          <div className='Скидки_card'>
             <img src={card_img} alt='' className='card_imgg'/>
             <p className='card_discounts'>12%</p>
             <p className='card_names'>Cовместимость со вспышками — AD200/AD200Pro</p>
@@ -198,12 +202,13 @@ export default class Dashboard extends Component {
               <p className='camer_text'>Фотоаппараты</p>
             </div>
           </div>
-          <div className='Скидки'>
-        <div className='Скидки_title'>
-          <p className='Скидки_title_t'>Хиты продаж</p>
         </div>
-        <div className='Скидки_cards'>
-          <div className='Новинки_card'>
+        <div className='xit'>
+        <div className='xit_title'>
+          <p className='xit_title_t'>Хиты продаж</p>
+        </div>
+        <div className='xit_cards'>
+          <div className='xit_card'>
             <img src={card_img} alt='' className='card_imgg'/>
             <p className='card_xit'>Хит</p>
             <p className='card_names'>Cовместимость со вспышками — AD200/AD200Pro</p>
@@ -215,7 +220,7 @@ export default class Dashboard extends Component {
               </div>
             </div>
           </div>
-          <div className='Новинки_card'>
+          <div className='xit_card'>
             <img src={card_img} alt='' className='card_imgg'/>
             <p className='card_xit'>Хит</p>
             <p className='card_names'>Cовместимость со вспышками — AD200/AD200Pro</p>
@@ -227,7 +232,7 @@ export default class Dashboard extends Component {
               </div>
             </div>
           </div>
-          <div className='Новинки_card'>
+          <div className='xit_card'>
             <img src={card_img} alt='' className='card_imgg'/>
             <p className='card_xit'>Хит</p>
             <p className='card_names'>Cовместимость со вспышками — AD200/AD200Pro</p>
@@ -239,7 +244,7 @@ export default class Dashboard extends Component {
               </div>
             </div>
           </div>
-          <div className='Новинки_card'>
+          <div className='xit_card'>
             <img src={card_img} alt='' className='card_imgg'/>
             <p className='card_xit'>Хит</p>
             <p className='card_names'>Cовместимость со вспышками — AD200/AD200Pro</p>
@@ -253,6 +258,25 @@ export default class Dashboard extends Component {
           </div>
         </div>
         </div>
+        <div className='brend'>
+          <h1 className='brend_t'>Популярные бренды</h1>
+          <div className='brend_boxs'>
+            <div className='brend_box'>
+              <img src={apple} alt='' className='apple'/>
+            </div>
+            <div className='brend_box'>
+              <img src={samsung} alt='' className='samsung'/>
+            </div>
+            <div className='brend_box'>
+              <img src={huawe} alt='' className='huawe'/>
+            </div>
+            <div className='brend_box'>
+              <img src={artel} alt='' className='artel'/>
+            </div>
+            <div className='brend_box'>
+              <img src={mi} alt='' className='mi'/>
+            </div>
+          </div>
         </div>
       </div>
     )
