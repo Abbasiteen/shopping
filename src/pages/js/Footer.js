@@ -1,9 +1,103 @@
 import React, { Component } from 'react'
-
+import { FiSearch } from 'react-icons/fi'
+import { BsFillTelephoneFill } from 'react-icons/bs'
+import { FaFacebookF } from 'react-icons/fa'
+import { BsInstagram } from 'react-icons/bs'
+import { BsTwitter } from 'react-icons/bs'
+import logo from '../img/logo.png'
+import apple from '../img/apple.png'
+import samsung from '../img/samsung.png'
+import huawe from '../img/huawe.png'
+import artel from '../img/artel.png'
+import mi from '../img/mi.png'
+import '../css/Footer.css'
 export default class Footer extends Component {
   render() {
     return (
-      <div>Footer</div>
+      <div>
+          <div className='brend'>
+          <h1 className='brend_t'>Популярные бренды</h1>
+          <div className='brend_boxs'>
+            <div className='brend_box'>
+              <img src={apple} alt='' className='apple'/>
+            </div>
+            <div className='brend_box'>
+              <img src={samsung} alt='' className='samsung'/>
+            </div>
+            <div className='brend_box'>
+              <img src={huawe} alt='' className='huawe'/>
+            </div>
+            <div className='brend_box'>
+              <img src={artel} alt='' className='artel'/>
+            </div>
+            <div className='brend_box'>
+              <img src={mi} alt='' className='mi'/>
+            </div>
+          </div>
+        </div>
+        <footer className='main_f'>
+          <div className='footer'>
+            <div className='footer_links'>
+              <p>Иинформация</p>
+              <hr/>
+              <ul className='footer_ul'>
+                <li>О нас</li>
+                <li>Условия использования</li>
+                <li>Оплата и доставка</li>
+                <li>Как заказать</li>
+                <li>Вопросы и ответы</li>
+              </ul>
+            </div>
+            <div className='footer_links'>
+              <p>Иинформация</p>
+              <hr/>
+              <ul className='footer_ul'>
+                <li>О нас</li>
+                <li>Условия использования</li>
+                <li>Оплата и доставка</li>
+                <li>Как заказать</li>
+                <li>Вопросы и ответы</li>
+              </ul>
+            </div>
+            <div className='footer_card'>
+              <div className='tel_p'>
+              <div className='tel'>
+                <div className='tel_i'>
+                  <span><BsFillTelephoneFill/></span>
+                </div>
+                <p className='tel_t'>+99894 304 87 10</p>
+              </div>
+              <button className='tel_btn'>ЗАКАЗАТЬ ЗВОНОК</button>
+              </div>
+              <div className='footers_f'>
+                <div className='footer_l'>
+              <div className='footer_text'>
+                <p >Yunusobod tumani -22 kvartal</p>
+                <p>Эл.почта: webdesigner@gmail.com</p>
+              </div>
+              <div className='f_input'>
+                <input className='footer_inputs' placeholder='Поиск'/>
+                {/* <span className='FiSearch'><FiSearch/></span>  */}
+              </div>
+              </div>
+              <div className='footer_icons'>
+                <span><FaFacebookF/></span>
+                <span><BsInstagram/></span>
+                <span><BsTwitter/></span>
+              </div>
+              </div>
+            </div>
+          </div>
+          <span className='f_hr'><hr/></span>
+          <div className='footer_end'>
+          
+            <div className='f_logo'>
+              <img src={logo} alt=""className='f_logo'/>
+            </div>
+            <p className='footer_p'>© 2022 Lift Media. All Rights Reserved. </p>
+          </div>
+        </footer>
+      </div>
     )
   }
 }
