@@ -1,5 +1,12 @@
 import React, { Component } from 'react'
 import about from '../img/about.png'
+import { TbTruckDelivery } from 'react-icons/tb'
+import { TbDiscount2 } from 'react-icons/tb'
+import { AiOutlineSafety } from 'react-icons/ai'
+import { MdOutlinePublishedWithChanges } from 'react-icons/md'
+import { GiMoneyStack } from 'react-icons/gi'
+import { BsFillPeopleFill } from 'react-icons/bs'
+
 import '../css/About.css'
 export default class About extends Component {
   render() {
@@ -42,7 +49,41 @@ export default class About extends Component {
                 <button className='about_btn'>наш магазин</button>
             </div>
         </div>
-
+        <div className='why'>
+          <h1 className='why_title'>Почему выбирают нас</h1>
+        <div className='why_cards'>
+        <div className='why_card'>
+            <button className='why_icon'><TbTruckDelivery/></button>
+            <p className='why_p1'>Доставка за 4 часа по Узбекистану</p>
+            <p className='why_p2'>Sar kobelt: funktionsrätt. Kaliga avis. Kokror tvåhandsbeslut även om bena. Jigon speligen holigt. </p>
+          </div>
+          <div className='why_card'>
+            <button className='why_icon'><TbTruckDelivery/></button>
+            <p className='why_p1'>Лучшая цена на рынке</p>
+            <p className='why_p2'>Sar kobelt: funktionsrätt. Kaliga avis. Kokror tvåhandsbeslut även om bena. Jigon speligen holigt. </p>
+          </div>
+          <div className='why_card'>
+            <button className='why_icon'><TbTruckDelivery/></button>
+            <p className='why_p1'>Пожизненная гарантия</p>
+            <p className='why_p2'>Sar kobelt: funktionsrätt. Kaliga avis. Kokror tvåhandsbeslut även om bena. Jigon speligen holigt. </p>
+          </div>
+          <div className='why_card'>
+            <button className='why_icon'><TbTruckDelivery/></button>
+            <p className='why_p1'>Вернем деньги если не понравится</p>
+            <p className='why_p2'>Sar kobelt: funktionsrätt. Kaliga avis. Kokror tvåhandsbeslut även om bena. Jigon speligen holigt. </p>
+          </div>
+          <div className='why_card'>
+            <button className='why_icon'><TbTruckDelivery/></button>
+            <p className='why_p1'>Любые способы оплаты</p>
+            <p className='why_p2'>Sar kobelt: funktionsrätt. Kaliga avis. Kokror tvåhandsbeslut även om bena. Jigon speligen holigt. </p>
+          </div>
+          <div className='why_card'>
+            <button className='why_icon'><TbTruckDelivery/></button>
+            <p className='why_p1'>Эксперты</p>
+            <p className='why_p2'>Sar kobelt: funktionsrätt. Kaliga avis. Kokror tvåhandsbeslut även om bena. Jigon speligen holigt. </p>
+          </div>
+        </div>
+        </div>
       </div>
     )
   }
