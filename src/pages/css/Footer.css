@@ -43,7 +43,7 @@
     background-color: #3A3330;
 }
 .footer{
-    width: 100vw;
+    width: 80vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -75,7 +75,7 @@
     border-radius: 30px;
 }   
 .tel{
-    width: 13em;
+    width: 14em;
     display: flex;
     align-items: center;
     justify-content: space-between;
