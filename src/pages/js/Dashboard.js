@@ -4,7 +4,8 @@ import { TbShoppingCartPlus } from 'react-icons/tb'
 import card_img from '../img/camera.png'
 import carousel from '../img/carousel.png'
 import camer from '../img/camer.png'
-import Select from 'react-select'
+import Select from 'react-select';
+
 import '../css/Dashboard.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 const options = [
@@ -12,6 +13,7 @@ const options = [
   { value: '2 шт.', label: '2 шт.' },
   { value: '3 шт.', label: '3 шт.' }
 ]
+const cards=require("../js/json")
 export default class Dashboard extends Component {
   render() {
     return (
@@ -51,17 +53,18 @@ export default class Dashboard extends Component {
         <div className='Новинки'>
           <p className='Новинки_title'>Новинки</p>
         <div className='Новинки_cards'>
-          <div className='Новинки_card'>
-            <img src={card_img} alt='' className='card_imgg'/>
-            <p className='card_names'>Cовместимость со вспышками — AD200/AD200Pro</p>
-            <p className='prices'>62 392,23 Сум</p>
+       {cards.map(item=>{ 
+        return <div className='Новинки_card'>
+            <img src={item.Image} alt='' className='card_imgg'/>
+            <p className='card_names'>{item.name}</p>
+            <p className='prices'>{item.price}</p>
             <div className='card_footer'>
               <Select placeholder='1шт.' className='amounts' options={options} />
               <div className='card_btnn'>
                 <button className='btnn'><TbShoppingCartPlus/></button>
               </div>
             </div>
-          </div>
+          </div>})} 
           <div className='Новинки_card'>
             <img src={card_img} alt='' className='card_imgg'/>
             <p className='card_names'>Cовместимость со вспышками — AD200/AD200Pro</p>

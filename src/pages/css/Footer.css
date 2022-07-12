@@ -7,37 +7,29 @@
 }
 .brend_boxs{
     width: 80vw;
-    height: 132px;
+    height: 10vw;
     border: 1px solid #ccc;
     border-radius: 30px;
     margin: 5% auto;
-    display: grid;
-    grid-template-columns: 245px 245px 245px 245px 245px;
+    overflow: hidden;
+  display: flex;
+  justify-content: space-around;
 }
 .brend_box{
-    border: 0.5px solid #eee;
+    display: flex;
     align-items: center;
     justify-content: center;
+    width: 15vw;
+}
+.brend_box img{
+    width: 25%;
+}
+.brend_box img:nth-child(1),.brend_box img:nth-child(5){
+width:10vw;
 }
 .brend_box:hover{
     background-color: #FF8892;
     z-index: 8;
-}
-.apple{
-    padding: 30px 105px;
-    z-index: 99;
-}
-.samsung{
-    padding: 24px 15px;
-    z-index: 99;
-}
-.huawe{
-    padding: 45px 30px;
-    z-index: 99;
-}
-.mi{
-    padding: 30px 80px;
-    z-index: 99;
 }
 .main_f{
     background-color: #3A3330;
@@ -50,8 +42,7 @@
     margin: 0 auto;
     /* background-color: #3A3330; */
     color: #fff;
-    padding-left: 100px;
-    padding-right: 100px;
+
     padding-top: 50px;
 }
 .footer_links{
@@ -159,4 +150,45 @@
 .footer_p{
     margin: 50px auto;
     color: #fff;
+}
+.companylogo{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    width: 60%;
+  margin: auto;
+    border: 1px solid red;
+    border-radius: 30px;
+    overflow: hidden;
+ 
+    
+}
+.companylogo img{
+width: 80%;
+display: flex;
+    justify-content: center;
+    align-items:center ;
+  
+     padding: 30px 50px;
+}
+@media (max-width:991px){
+.companylogo img {
+        padding: 13px 15px;
+    }
+        .companylogo {
+            border-radius: 18px;
+        }
+}
+.asas:hover {
+
+background-color: #FF6875;
+
+}
+#ss{
+ 
+    width: 40%;
+}
+.asas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

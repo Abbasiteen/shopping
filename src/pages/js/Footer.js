@@ -15,26 +15,26 @@ export default class Footer extends Component {
   render() {
     return (
       <div>
-          <div className='brend'>
+      
+        
+           <div className='brend'>
           <h1 className='brend_t'>Популярные бренды</h1>
-          <div className='brend_boxs'>
-            <div className='brend_box'>
-              <img src={apple} alt='' className='apple'/>
+<div className='companylogo'>
+          <div className='asas'>
+          <img src={apple} alt='' id="ss" />
             </div>
-            <div className='brend_box'>
-              <img src={samsung} alt='' className='samsung'/>
+             <div className='asas'>
+          <img src={samsung} alt='' />
             </div>
-            <div className='brend_box'>
-              <img src={huawe} alt='' className='huawe'/>
-            </div>
-            <div className='brend_box'>
-              <img src={artel} alt='' className='artel'/>
-            </div>
-            <div className='brend_box'>
-              <img src={mi} alt='' className='mi'/>
-            </div>
-          </div>
-        </div>
+             <div className='asas'>
+          <img src={huawe} alt='' />
+            </div> 
+            <div className='asas'>
+          <img src={artel} alt='' />
+            </div> <div className='asas'>
+          <img src={mi} alt='' id='ss' /></div> 
+</div>
+ </div>
         <footer className='main_f'>
           <div className='footer'>
             <div className='footer_links'>
