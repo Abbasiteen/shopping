@@ -26,7 +26,7 @@ export default class Navbar extends Component {
     <div className='katalog'>
       <span><RiMenu4Line/>Каталог</span>
     </div>
-    <div className='input'>
+    <div className='inputs'>
       <input className='header_inputs' placeholder='Что желаете найти?'/>
       <span className='FiSearch'><FiSearch/></span> 
     </div>
@@ -35,6 +35,21 @@ export default class Navbar extends Component {
     </div>
   </div>
 </div>
+      {/* <div className='navbar2'>
+        <div className='navbar2_text'>
+            <div className='logo2'>
+              <img src={logo} alt="" className='logo2-img' />
+            </div>
+          <div className='navbar2_texts'>
+            <p>О нас</p>
+            <span><FaMapMarkerAlt />Ташкент</span>
+          </div>
+          </div>
+          <div className='2inputs'>
+            <input className='2header_inputs' placeholder='Что желаете найти?' />
+            <span className='FiSearch'><FiSearch /></span>
+          </div>
+      </div> */}
 
       </div>
     )
