@@ -1,0 +1,31 @@
+/* body{
+    background-color: #A5A5A5;
+} */
+.contact{
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.contact_t{
+    /* width: 20vw; */
+    margin: 100px auto;
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between; */
+}
+.contact_title{
+    font-size: 36px;
+    padding-top: 100px;
+    /* padding-left: 100px; */
+    padding-bottom: 50px;
+}
+.contact_links{
+    width: 20vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.about_img{
+    margin-top: 110px;
+}

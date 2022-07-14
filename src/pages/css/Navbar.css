@@ -1,12 +1,158 @@
-.navbarbody{
-    display: flex;
-    justify-content: flex-end;
-    margin: auto;
-    margin-right: 130px;
-    width: 100%;
-    margin-top:20px;
-    margin-bottom: 20px;
+.navbars{
+    width: 100vw;
+    height: 102px;
+    background-color: #F8F8F8;
 }
-.navbarbody span{
-    margin-right: 50px;
+.navbarbodys{
+    top: 2%;
+    justify-content: flex-end;
+    position: absolute;
+    right: 5%;
+}
+.zakazat{
+    color: red;
+}
+.main_textss{
+    width: 16vw;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    margin: 1% auto;
+}
+.navs{
+    position: absolute;
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 130px 10%;
+} 
+.header_inputs{
+    width: 41vw;
+    height: 54px;
+    border-radius: 30px;
+    border: 1px solid #eee;
+    background: linear-gradient(98.34deg, #FCFCFC 0%, #F9F9F9 0.01%, #FDFDFD 100%);
+    padding: 16px 28px;
+    font-size: 20px;
+}
+.inputs{
+    position: relative;
+    /* box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.05); */
+    border-radius: 30px;
+}
+ .FiSearch{
+    position: absolute;
+    right: 13.49px;
+    top: 4.45px;
+    opacity: 0.7;
+    font-size: 25px;
+} 
+.katalog{
+    width: 6.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.katalog p {
+    padding-top: 14px;
+}
+.menu{
+    width: 35px;
+    height: 25px;
+    opacity: 0.8;
+    border: 0.642857px solid rgba(38, 33, 30, 0.2);
+    border-radius: 3.85714px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* opacity: 1; */
+}
+.basket{
+    width: 5.2vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.basket p {
+    padding-top: 18px;
+}
+
+/* navbarr2 */
+
+.nav_phone{
+    width: 100vw;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F8F8F8;
+}
+.phone_nav{
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #000;
+}
+.nav_logo{
+    padding: 15px;
+}
+.nav_text{
+    width: 20vw;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+.nav_search{
+    width: 70vw;
+    height: 54px;
+    border-radius: 30px;
+    border: 1px solid #eee;
+    background: linear-gradient(98.34deg, #FCFCFC 0%, #F9F9F9 0.01%, #FDFDFD 100%);
+    padding: 16px 28px;
+    font-size: 20px;
+}
+.nav_input{
+    position: relative;
+    border-radius: 30px;
+    padding: 20px;
+}
+.FiSearch2{
+    
+}
+.down_nav{
+    width: 95vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#language{
+    width: 50px;
+}
+@media(min-width:800px){
+    .navbars{
+        display: flex;
+    }
+    .navbar_2{
+        display: none;
+    }
+}
+@media(max-width:800px){
+    .navbars{
+        display: none;
+    }
+    .navbar_2{
+        display: block;
+    }
+}
+@media(max-width:600px){
+    .nav_text{
+        width: 30vw;
+    }
+}
+@media(max-width:400px){
+    .nav_text{
+        width: 40vw;
+    }
 }

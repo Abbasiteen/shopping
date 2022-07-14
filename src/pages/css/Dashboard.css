@@ -1,0 +1,181 @@
+/* body{
+    background-color: #A5A5A5;
+} */
+.main_carousel{
+    width: 90vw !important; 
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 10% auto !important;
+}
+.Новинки_cards{
+    width: 80vw;
+    display: grid;
+    grid-template-columns:  302px 302px 302px 302px 302px;
+    gap: 23px 24px;
+    margin: 4% auto; 
+}
+.Новинки_title{
+    margin-left: 6%;
+    font-size: 2em;
+    margin-left: 6%;
+    margin-top: 5%;
+}
+.Новинки_card{
+    /* width: 302px; */
+    height: 559px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    -webkit-box-shadow: 0px 0px 3px 1px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 0px 3px 1px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 0px 3px 1px rgba(34, 60, 80, 0.2);
+}
+.card_imgg{
+    padding: 10px;
+}
+.card_names{
+    width: 240px;
+    font-size: 36x;
+    font-weight: bold;
+    margin: 27px;
+}
+.prices{
+    font-size: 1.8em;
+    font-weight: bold;
+    margin: 27px;
+}
+.amounts{
+    width: 92px;
+    height: 30px;
+    border-radius: 80px;
+}
+.css-1s2u09g-control{
+    border-radius: 50px !important;
+}
+.btnn{
+    border: none;
+    background-color: #FF6875;
+    width: 50px;
+    height: 50px;
+    border-radius: 40px;
+    color: #fff;
+    font-size: 2em;
+}
+.Скидки{
+    margin-top: 5%;
+}
+.Скидки_title{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+.Скидки_title_t{
+    font-size: 2em;
+    margin-left: 6%;
+}
+.Скидки_title_i{
+    font-size: 2em;
+    color: red;
+}
+.Скидки_cards{    
+    width: 80vw;
+    display: grid;
+    grid-template-columns: 302px 302px 302px 302px 302px;
+    gap: 23px 24px;
+    margin: auto;
+}
+.Скидки_card{
+    /* width: 302px; */
+    height: 559px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    -webkit-box-shadow: 0px 0px 3px 1px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 0px 3px 1px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 0px 3px 1px rgba(34, 60, 80, 0.2);
+}
+.card_discounts{
+    color: red;
+}
+.card_footer{
+    width: 257px;
+    margin: -16px 29px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.famous_title{
+    font-size: 2em;
+    margin-left: 6%;
+    margin-top: 10%;
+}
+.famous_cards{
+    width: 80vw;
+    display: grid;
+    grid-template-columns: 237px 237px 237px 237px 237px;
+    gap: 25px 23px;
+    margin: 5% auto;
+    /* margin: 30px; */
+}
+.camer_card{
+    height: 179px;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+    -webkit-box-shadow: 0px 0px 3px 1px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 0px 3px 1px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 0px 3px 1px rgba(34, 60, 80, 0.2);
+}
+.camer{
+    margin: 30px 44px;
+}
+.camer_text{
+    margin: 5px 55px;
+}
+.card_xit{
+    width: 72px;
+    height: 19px;
+    border-radius: 60px;
+    background-color: #FF6875;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    margin: 25px;
+}
+.xit{
+    margin-top: 50px;
+}
+.xit_title{
+    /* width: 200px; */
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    /* justify-content: space-between; */
+}
+.xit_title_t{
+    font-size: 2em;
+    margin-left: 6%;
+}
+.xit_cards{    
+    width: 80vw;
+    display: grid;
+    grid-template-columns:  302px 302px 302px 302px;
+    gap: 23px 24px;
+    margin: auto;
+}
+.xit_card{
+    /* width: 302px; */
+    height: 559px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    -webkit-box-shadow: 0px 0px 3px 1px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 0px 3px 1px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 0px 3px 1px rgba(34, 60, 80, 0.2);
+}
+.card_names_x{
+    width: 240px;
+    font-size: 36x;
+    font-weight: bold;
+    margin: -10px 27px;
+}

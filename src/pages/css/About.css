@@ -1,0 +1,133 @@
+/* body{
+    background-color: #A5A5A5;
+} */
+.about{
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.main_title{
+    font-size: 36px;
+    padding-top: 100px;
+    padding-left: 100px;
+    padding-bottom: 50px;
+}
+.main_box{
+    width: 24vw;
+    height: 121px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.08);
+    margin-top: 11px;
+    margin-left: 100px;
+}
+.main_box1{
+    width: 50%;
+    height: 121px;
+    border: .5px solid #ccc;
+    border-radius: 20px 0 0 20px;
+}
+.main_box2{
+    width: 50%;
+    height: 121px;
+    border: .5px solid #ccc;
+    border-radius:  0  20px 20px 0;
+    /* padding: 14px 19px; */
+}
+.main_box2 p{
+    width: 9.95vw;
+    font-size: 1em;
+    margin-left: 19px;
+    margin-top: 20px;
+}
+.box_p{
+    width: 10vw;
+    padding: 20px;
+    font-size: 42px;
+    /* font-weight: bold; */
+    font-family: 'Kumla';
+    font-style: normal;
+    font-weight: 400;
+    margin-top: -5px;
+}
+.box_p1{
+    margin-top: -42px;
+    margin-left: 25px;
+}
+.about_img{
+    margin-top: 168px;
+    margin-left: 91px;
+}
+.about_i{
+    width: 53vw;
+    height: 43vw;
+}
+.about_btn{
+    width: 222px;
+    height: 49px;
+    border: none;
+    border-radius: 20px;
+    font-size: 17px;
+    margin-right: 5px;
+}
+
+.why{
+    width: 98vw;
+    height: 130vh;
+    border-radius: 60px;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.08), inset 0px 0px 10px rgba(0, 0, 0, 0.08);
+    margin: 0 auto;
+}
+.why_title{
+    font-size: 36px;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 600;
+    padding-top: 96px;
+    margin-top: 70px;
+    margin-left: 100px;
+    /* margin: 96px 100px; */
+}
+.why_cards{
+    width: 80vw;
+    display: grid;
+    grid-template-columns:  25vw 25vw 25vw;
+    gap: 25px 23px;
+    margin: 10% auto;
+}
+.why_card{
+    height: 300px;
+    border-radius: 60px;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.08), inset 0px 0px 10px rgba(0, 0, 0, 0.08);
+
+}
+.why_icon{
+    width: 76px;
+    height: 76px;
+    margin-top: 30px;
+    margin-left: 30px;
+    /* margin: 30px 30px; */
+    background-color: #ff9292;
+    color: #fff;
+    border-radius: 90px;
+    border: none;
+    font-size: 45px;
+}
+.why_p1{
+    width: 14vw;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 23px;
+    margin: 21px 35px;
+}
+.why_p2{
+    width: 18vw;
+    margin-top: 15px;
+    margin-left: 35px;
+    font-size: 16px;
+}

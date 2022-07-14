@@ -1,0 +1,234 @@
+.brend{
+    margin: 5% auto;
+}
+.brend_t{
+    font-size: 2em;
+    margin-left: 6%;
+}
+.brend_boxs{
+    width: 80vw;
+    height: 10vw;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    margin: 5% auto;
+    overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+}
+.brend_box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15vw;
+}
+.brend_box img{
+    width: 25%;
+}
+.brend_box img:nth-child(1),.brend_box img:nth-child(5){
+width:10vw;
+}
+.brend_box:hover{
+    background-color: #FF8892;
+    z-index: 8;
+}
+.main_f{
+    background-color: #3A3330;
+}
+.footer{
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    /* background-color: #3A3330; */
+    color: #fff;
+
+    padding-top: 50px;
+}
+.footer_links{
+    width: 15vw;
+    list-style: none;
+}
+.footer_ul{
+    list-style: none;
+}
+.tel_p{
+    width: 35vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px auto;
+}
+.footer_card{
+    width: 40vw;
+    height: 236px;
+    background-color: #26211E;
+    border-radius: 30px;
+}   
+.tel{
+    width: 14em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding-left: 50px; */
+}
+.tel_i{
+    width: 32px;
+    height: 32px;
+    border: none;
+    border-radius: 30px;
+    background-color: #FF6875;
+    color: #fff;
+    font-size: 18px;
+    padding: 2px 7px;
+
+}
+.tel_t{
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #fff;
+}
+.tel_btn{
+    width: 174px;
+    height: 53px;
+    border: none;
+    background-color: #FF6875;
+    color: #fff;
+    border-radius: 3.95px;
+}
+.footers_f{
+    width: 35vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer_text{
+    color: #fff;
+    padding-left: 30px;
+}
+.f_input{
+    padding-left: 30px;
+}
+.footer_inputs{
+    width: 15vw;
+    height: 35px;
+    padding-left: 15px;
+    background: #D9D9D9;
+    /* color: rgba(255, 255, 255, 0.537); */
+    border-radius: 30px;
+    border: none;
+}
+.footer_icons{
+    width: 10vw;
+    font-size: 25px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.footer_end{
+    width: 90vw;
+    /* padding: 50px; */
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.f_hr{
+    width: 80vw;
+    color: #aaa;
+    margin: 0 auto;
+}
+.f_logo{
+    /* position: absolute; */
+    left: 100px;
+    margin-top: 20px;
+}
+.footer_p{
+    margin: 50px auto;
+    color: #fff;
+}
+.companylogo{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    width: 60%;
+    margin: auto;
+    border-radius: 30px;
+    overflow: hidden; 
+}
+.companylogo img{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    padding: 30px 50px;
+}
+@media (max-width:991px){
+.companylogo img {
+        padding: 13px 15px;
+    }
+        .companylogo {
+            border-radius: 18px;
+        }
+}
+.asas:hover {
+
+background-color: #FF6875;
+
+}
+#ss{
+    width: 55%;
+}
+.asas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+/* second footer */
+.second_footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer_card2{
+    width: 70vw;
+    height: 236px;
+    background-color: #26211E;
+    border-radius: 30px;
+} 
+.tel2_p{
+    width: 40vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px auto;
+}
+.footers_f2{
+    width: 65vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+@media(min-width:1200px){
+    .main_f{
+        display: block;
+    }
+    .second_footer{
+        display: none;
+    }
+}
+@media(max-width:1200px){
+    .main_f{
+        display: none;
+    }
+    .second_footer{
+        display: block;
+    }
+}
