@@ -97,6 +97,37 @@ export default class Footer extends Component {
             <p className='footer_p'>© 2022 Lift Media. All Rights Reserved. </p>
           </div>
         </footer>
+
+        <footer className='second_footer'>
+        <div className='footer_card2'>
+              <div className='tel2_p'>
+              <div className='tel'>
+                <div className='tel_i'>
+                  <span><BsFillTelephoneFill/></span>
+                </div>
+                <p className='tel_t'>+99894 304 87 10</p>
+              </div>
+              <button className='tel_btn'>ЗАКАЗАТЬ ЗВОНОК</button>
+              </div>
+              <div className='footers_f2'>
+                <div className='footer_l'>
+              <div className='footer_text'>
+                <p >Yunusobod tumani -22 kvartal</p>
+                <p>Эл.почта: webdesigner@gmail.com</p>
+              </div>
+              <div className='f_input'>
+                <input className='footer_inputs' placeholder='Поиск'/>
+                {/* <span className='FiSearch'><FiSearch/></span>  */}
+              </div>
+              </div>
+              <div className='footer_icons'>
+                <span><FaFacebookF/></span>
+                <span><BsInstagram/></span>
+                <span><BsTwitter/></span>
+              </div>
+              </div>
+            </div>
+        </footer>
       </div>
     )
   }

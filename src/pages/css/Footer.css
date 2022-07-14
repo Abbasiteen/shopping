@@ -155,20 +155,16 @@ width:10vw;
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
     width: 60%;
-  margin: auto;
-    border: 1px solid red;
+    margin: auto;
     border-radius: 30px;
-    overflow: hidden;
- 
-    
+    overflow: hidden; 
 }
 .companylogo img{
-width: 80%;
-display: flex;
+    width: 80%;
+    display: flex;
     justify-content: center;
     align-items:center ;
-  
-     padding: 30px 50px;
+    padding: 30px 50px;
 }
 @media (max-width:991px){
 .companylogo img {
@@ -184,11 +180,55 @@ background-color: #FF6875;
 
 }
 #ss{
- 
-    width: 40%;
+    width: 55%;
 }
 .asas{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+
+
+/* second footer */
+.second_footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer_card2{
+    width: 70vw;
+    height: 236px;
+    background-color: #26211E;
+    border-radius: 30px;
+} 
+.tel2_p{
+    width: 40vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px auto;
+}
+.footers_f2{
+    width: 65vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+@media(min-width:1200px){
+    .main_f{
+        display: block;
+    }
+    .second_footer{
+        display: none;
+    }
+}
+@media(max-width:1200px){
+    .main_f{
+        display: none;
+    }
+    .second_footer{
+        display: block;
+    }
 }

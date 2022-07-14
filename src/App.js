@@ -14,7 +14,7 @@ export default class App extends Component {
         {/* <Contact/> */}
         {/* <About/> */}
         {/* <Dashboard/>  */}
-        {/* <Footer/> */}
+        <Footer/>
         {/* <Error/> */}
       </div>
     )

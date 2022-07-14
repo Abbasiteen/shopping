@@ -48,9 +48,16 @@ export default class Navbar extends Component {
           </div>
 
       </div>
+      <div className='down_nav'>
       <div className='nav_input'>
             <input className='nav_search' placeholder='Что желаете найти?' />
             <span className='FiSearch2'><FiSearch/></span> 
+      </div>
+      <select id='language'>
+        <option>Uzb</option>
+        <option>Eng</option>
+        <option>Rus</option>
+      </select>
       </div>
 </div>
       </div>
