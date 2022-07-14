@@ -5,12 +5,12 @@ import { RiMenu4Line } from 'react-icons/ri'
 import { FiSearch } from 'react-icons/fi'
 import { AiOutlineShoppingCart } from 'react-icons/ai';
 import logo from '../img/logo.png'
-import "../css/Navbar.css"
+import '../css/Navbar.css'
 export default class Navbar extends Component {
   render() {
     return (
       <div>
-{/* <div className='navbars'>
+<div className='navbars'>
   <div className='main_textss'>
     <p>О нас</p>
     <span><FaMapMarkerAlt/>Ташкент</span>
@@ -36,9 +36,9 @@ export default class Navbar extends Component {
       <p>Корзина</p>
     </div>
   </div>
-</div> */}
+</div>
+<div className='navbar_2'>
       <div className='nav_phone'>
-        <div className='.phone_nav'>
             <div className='nav_logo'>
               <img src={logo} alt="" className='logo2-img' />
             </div>
@@ -46,13 +46,13 @@ export default class Navbar extends Component {
             <p>О нас</p>
             <span><FaMapMarkerAlt />Ташкент</span>
           </div>
-        </div>
-          {/* <div className='2inputs'>
-            <input className='2header_inputs' placeholder='Что желаете найти?' />
-            <span className='FiSearch'><FiSearch /></span>
-          </div> */}
-      </div>
 
+      </div>
+      <div className='nav_input'>
+            <input className='nav_search' placeholder='Что желаете найти?' />
+            <span className='FiSearch2'><FiSearch/></span> 
+      </div>
+</div>
       </div>
 
     )
