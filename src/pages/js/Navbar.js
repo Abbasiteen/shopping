@@ -10,7 +10,7 @@ export default class Navbar extends Component {
   render() {
     return (
       <div>
-<div className='navbars'>
+{/* <div className='navbars'>
   <div className='main_textss'>
     <p>О нас</p>
     <span><FaMapMarkerAlt/>Ташкент</span>
@@ -24,34 +24,37 @@ export default class Navbar extends Component {
       <img src={logo} alt=""className='logo-img'/>
     </div>
     <div className='katalog'>
-      <span><RiMenu4Line/>Каталог</span>
+      <span className='menu'><RiMenu4Line/></span>
+      <p>Каталог</p>
     </div>
     <div className='inputs'>
       <input className='header_inputs' placeholder='Что желаете найти?'/>
       <span className='FiSearch'><FiSearch/></span> 
     </div>
     <div className='basket'>
-      <span><AiOutlineShoppingCart/>Корзина</span>
+      <span><AiOutlineShoppingCart/></span>
+      <p>Корзина</p>
     </div>
   </div>
-</div>
-      {/* <div className='navbar2'>
-        <div className='navbar2_text'>
-            <div className='logo2'>
+</div> */}
+      <div className='nav_phone'>
+        <div className='.phone_nav'>
+            <div className='nav_logo'>
               <img src={logo} alt="" className='logo2-img' />
             </div>
-          <div className='navbar2_texts'>
+          <div className='nav_text'>
             <p>О нас</p>
             <span><FaMapMarkerAlt />Ташкент</span>
           </div>
-          </div>
-          <div className='2inputs'>
+        </div>
+          {/* <div className='2inputs'>
             <input className='2header_inputs' placeholder='Что желаете найти?' />
             <span className='FiSearch'><FiSearch /></span>
-          </div>
-      </div> */}
+          </div> */}
+      </div>
 
       </div>
+
     )
   }
 }

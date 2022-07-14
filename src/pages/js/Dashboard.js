@@ -53,7 +53,7 @@ export default class Dashboard extends Component {
         <div className='Новинки'>
           <p className='Новинки_title'>Новинки</p>
         <div className='Новинки_cards'>
-       {cards.map(item=>{ 
+       {/* {cards.map(item=>{ 
         return <div className='Новинки_card'>
             <img src={item.Image} alt='' className='card_imgg'/>
             <p className='card_names'>{item.name}</p>
@@ -64,7 +64,18 @@ export default class Dashboard extends Component {
                 <button className='btnn'><TbShoppingCartPlus/></button>
               </div>
             </div>
-          </div>})} 
+          </div>})}  */}
+          <div className='Новинки_card'>
+            <img src={card_img} alt='' className='card_imgg'/>
+            <p className='card_names'>Cовместимость со вспышками — AD200/AD200Pro</p>
+            <p className='prices'>62 392,23 Сум</p>
+            <div className='card_footer'>
+              <Select placeholder='1шт.' className='amounts' options={options} />
+              <div className='card_btnn'>
+                <button className='btnn'><TbShoppingCartPlus/></button>
+              </div>
+            </div>
+          </div>
           <div className='Новинки_card'>
             <img src={card_img} alt='' className='card_imgg'/>
             <p className='card_names'>Cовместимость со вспышками — AD200/AD200Pro</p>

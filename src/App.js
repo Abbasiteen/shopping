@@ -13,7 +13,7 @@ export default class App extends Component {
         <Navbar/>
         {/* <Contact/> */}
         {/* <About/> */}
-        {/* <Dashboard/> */}
+        {/* <Dashboard/>  */}
         {/* <Footer/> */}
         {/* <Error/> */}
       </div>
