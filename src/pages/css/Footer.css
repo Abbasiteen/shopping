@@ -4,6 +4,7 @@
 .brend_t{
     font-size: 2em;
     margin-left: 6%;
+    margin-top: 100px;
 }
 .brend_boxs{
     width: 80vw;
@@ -193,28 +194,53 @@ background-color: #FF6875;
 
 /* second footer */
 .second_footer{
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
+    background-color: #3A3330;
+    color: #fff;
+    padding-top: 2%;
 }
 .footer_card2{
-    width: 70vw;
+    width: 90vw;
     height: 236px;
     background-color: #26211E;
     border-radius: 30px;
+    margin: 1% auto;
 } 
 .tel2_p{
-    width: 40vw;
+    width: 85vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 10px auto;
+    margin: 0px auto;
+    padding: 15px;
 }
 .footers_f2{
-    width: 65vw;
+    width: 85vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+.footer2_icons{
+    width: 20vw;
+    font-size: 25px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.footer_links2{
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5% auto;
+}
+.footer_link2{
+    width: 30vw;
 }
 @media(min-width:1200px){
     .main_f{

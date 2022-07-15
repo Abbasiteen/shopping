@@ -99,7 +99,7 @@ export default class Footer extends Component {
         </footer>
 
         <footer className='second_footer'>
-        <div className='footer_card2'>
+            <div className='footer_card2'>
               <div className='tel2_p'>
               <div className='tel'>
                 <div className='tel_i'>
@@ -120,12 +120,36 @@ export default class Footer extends Component {
                 {/* <span className='FiSearch'><FiSearch/></span>  */}
               </div>
               </div>
-              <div className='footer_icons'>
+              <div className='footer2_icons'>
                 <span><FaFacebookF/></span>
                 <span><BsInstagram/></span>
                 <span><BsTwitter/></span>
               </div>
               </div>
+            </div>
+            <div className='footer_links2'>
+            <div className='footer_link2'>
+              <p>Иинформация</p>
+              <hr/>
+              <ul className='footer_ul'>
+                <li>О нас</li>
+                <li>Условия использования</li>
+                <li>Оплата и доставка</li>
+                <li>Как заказать</li>
+                <li>Вопросы и ответы</li>
+              </ul>
+            </div>
+            <div className='footer_link2'>
+              <p>Иинформация</p>
+              <hr/>
+              <ul className='footer_ul'>
+                <li>О нас</li>
+                <li>Условия использования</li>
+                <li>Оплата и доставка</li>
+                <li>Как заказать</li>
+                <li>Вопросы и ответы</li>
+              </ul>
+            </div>
             </div>
         </footer>
       </div>
