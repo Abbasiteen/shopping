@@ -150,7 +150,15 @@ export default class Footer extends Component {
                 <li>Вопросы и ответы</li>
               </ul>
             </div>
+
             </div>
+          <div className='footer_end'>
+          
+            <div className='f_logo'>
+              <img src={logo} alt=""className='f_logo'/>
+            </div>
+            <p className='footer_p'>© 2022 Lift Media. All Rights Reserved. </p>
+          </div>
         </footer>
       </div>
     )

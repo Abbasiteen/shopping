@@ -9,10 +9,14 @@
 }
 .Новинки_cards{
     width: 80vw;
-    display: grid;
+    /* display: grid;
     grid-template-columns:  302px 302px 302px 302px 302px;
-    gap: 23px 24px;
+    gap: 23px 24px; */
     margin: 4% auto; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: scroll;
 }
 .Новинки_title{
     margin-left: 6%;
@@ -21,7 +25,7 @@
     margin-top: 5%;
 }
 .Новинки_card{
-    /* width: 302px; */
+    width: 302px;
     height: 559px;
     align-items: center;
     justify-content: center;
@@ -79,13 +83,17 @@
 }
 .Скидки_cards{    
     width: 80vw;
-    display: grid;
+    /* display: grid;
     grid-template-columns: 302px 302px 302px 302px 302px;
-    gap: 23px 24px;
+    gap: 23px 24px; */
     margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: scroll;
 }
 .Скидки_card{
-    /* width: 302px; */
+    width: 302px;
     height: 559px;
     align-items: center;
     justify-content: center;
@@ -111,11 +119,14 @@
 }
 .famous_cards{
     width: 80vw;
-    display: grid;
+    /* display: grid;
     grid-template-columns: 237px 237px 237px 237px 237px;
-    gap: 25px 23px;
+    gap: 25px 23px; */
     margin: 5% auto;
-    /* margin: 30px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: scroll;
 }
 .camer_card{
     height: 179px;
@@ -158,13 +169,17 @@
 }
 .xit_cards{    
     width: 80vw;
-    display: grid;
+    /* display: grid;
     grid-template-columns:  302px 302px 302px 302px;
-    gap: 23px 24px;
+    gap: 23px 24px; */
     margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: scroll;
 }
 .xit_card{
-    /* width: 302px; */
+    width: 302px;
     height: 559px;
     align-items: center;
     justify-content: center;

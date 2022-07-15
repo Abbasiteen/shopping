@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { FiFacebook } from 'react-icons/fi'
 import { ImGooglePlus } from 'react-icons/im'
+import { AiOutlineLinkedin } from 'react-icons/ai'
 import contact from '../img/contact.png'
 import '../css/Contact.css'
 
@@ -23,14 +24,17 @@ export default class Dashboard extends Component {
                         <p>Д. 1, Кв. 43</p>
                     </div>
                 </div>
-                <div className='contact_icons'>
-                <button><FiFacebook/></button>
-                <button><ImGooglePlus/></button>
-                </div>
+                    <div className='contact_icons'>
+                        <button className='contact_icon'><AiOutlineLinkedin/></button>
+                        <button className='contact_icon'><FiFacebook/></button>
+                        <button className='contact_icon'><ImGooglePlus/></button>
+                    </div>
                 </div>
                 <img src={contact} alt='' className='about_img' />
-                
             </div>
+            {/* <div className='contact_2'>
+                <img src={contact} alt='' className='about_img2' />
+            </div> */}
         </div>
       )
     } 
