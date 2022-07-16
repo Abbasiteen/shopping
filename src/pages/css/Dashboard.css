@@ -1,6 +1,7 @@
 /* body{
     background-color: #A5A5A5;
 } */
+
 .main_carousel{
     width: 90vw !important; 
     align-items: center !important;
@@ -17,6 +18,7 @@
     align-items: center;
     justify-content: space-between;
     overflow: scroll;
+    overflow-y: hidden;
 }
 .Новинки_title{
     margin-left: 6%;
@@ -30,6 +32,7 @@
     align-items: center;
     justify-content: center;
     border-radius: 30px;
+    margin: 3px 3px; 
     -webkit-box-shadow: 0px 0px 3px 1px rgba(34, 60, 80, 0.2);
     -moz-box-shadow: 0px 0px 3px 1px rgba(34, 60, 80, 0.2);
     box-shadow: 0px 0px 3px 1px rgba(34, 60, 80, 0.2);
@@ -91,6 +94,7 @@
     align-items: center;
     justify-content: space-between;
     overflow: scroll;
+    overflow-x: hidden;
 }
 .Скидки_card{
     width: 302px;
@@ -98,6 +102,7 @@
     align-items: center;
     justify-content: center;
     border-radius: 30px;
+    margin: 3px 3px;
     -webkit-box-shadow: 0px 0px 3px 1px rgba(34, 60, 80, 0.2);
     -moz-box-shadow: 0px 0px 3px 1px rgba(34, 60, 80, 0.2);
     box-shadow: 0px 0px 3px 1px rgba(34, 60, 80, 0.2);
@@ -177,6 +182,7 @@
     align-items: center;
     justify-content: space-between;
     overflow: scroll;
+    overflow-x: hidden;
 }
 .xit_card{
     width: 302px;
@@ -184,6 +190,7 @@
     align-items: center;
     justify-content: center;
     border-radius: 30px;
+    margin: 3px 3px;
     -webkit-box-shadow: 0px 0px 3px 1px rgba(34, 60, 80, 0.2);
     -moz-box-shadow: 0px 0px 3px 1px rgba(34, 60, 80, 0.2);
     box-shadow: 0px 0px 3px 1px rgba(34, 60, 80, 0.2);
@@ -193,4 +200,15 @@
     font-size: 36x;
     font-weight: bold;
     margin: -10px 27px;
+}
+@media(max-width:800px){
+    .carousel-indicators{
+        margin-bottom: 0rem !important;
+        margin: auto !important;
+        width: 80px !important;
+        list-style: none !important;
+    }
+    .carousel-control-next-icon, .carousel-control-prev-icon {
+        width: 1em !important;
+    }
 }
