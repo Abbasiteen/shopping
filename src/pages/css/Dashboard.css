@@ -10,15 +10,16 @@
 }
 .Новинки_cards{
     width: 80vw;
-    /* display: grid;
-    grid-template-columns:  302px 302px 302px 302px 302px;
-    gap: 23px 24px; */
     margin: 4% auto; 
     display: flex;
     align-items: center;
     justify-content: space-between;
-    overflow: scroll;
-    overflow-y: hidden;
+}
+@media(max-width:1450px){
+    .Новинки_cards{
+        overflow: scroll;
+        overflow-y: hidden;
+    }
 }
 .Новинки_title{
     margin-left: 6%;
@@ -86,15 +87,16 @@
 }
 .Скидки_cards{    
     width: 80vw;
-    /* display: grid;
-    grid-template-columns: 302px 302px 302px 302px 302px;
-    gap: 23px 24px; */
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    overflow: scroll;
-    overflow-x: hidden;
+}
+@media(max-width:1450px){
+    .Скидки_cards{
+        overflow: scroll;
+        overflow-y: hidden;
+    }
 }
 .Скидки_card{
     width: 302px;
@@ -124,14 +126,17 @@
 }
 .famous_cards{
     width: 80vw;
-    /* display: grid;
+    display: grid;
     grid-template-columns: 237px 237px 237px 237px 237px;
-    gap: 25px 23px; */
+    gap: 25px 23px;
     margin: 5% auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    overflow: scroll;
+    
+}
+@media(max-width:1450px){
+    .famous_cards{
+        overflow: scroll;
+        overflow-y: hidden;
+    }
 }
 .camer_card{
     height: 179px;
@@ -143,10 +148,10 @@
     box-shadow: 0px 0px 3px 1px rgba(34, 60, 80, 0.2);
 }
 .camer{
-    margin: 30px 44px;
+    margin: 10% auto;
 }
 .camer_text{
-    margin: 5px 55px;
+    text-align: center;
 }
 .card_xit{
     width: 72px;
@@ -162,11 +167,9 @@
     margin-top: 50px;
 }
 .xit_title{
-    /* width: 200px; */
     display: flex;
     align-items: center;
     font-weight: bold;
-    /* justify-content: space-between; */
 }
 .xit_title_t{
     font-size: 2em;
@@ -174,15 +177,16 @@
 }
 .xit_cards{    
     width: 80vw;
-    /* display: grid;
-    grid-template-columns:  302px 302px 302px 302px;
-    gap: 23px 24px; */
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    overflow: scroll;
-    overflow-x: hidden;
+}
+@media(max-width:1450px){
+    .xit_cards{
+        overflow: scroll;
+        overflow-y: hidden;
+    }
 }
 .xit_card{
     width: 302px;

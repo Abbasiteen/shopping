@@ -32,9 +32,9 @@ export default class Dashboard extends Component {
                 </div>
                 <img src={contact} alt='' className='about_img' />
             </div>
-            {/* <div className='contact_2'>
+            <div className='contact_2'>
                 <img src={contact} alt='' className='about_img2' />
-            </div> */}
+            </div>
         </div>
       )
     } 
