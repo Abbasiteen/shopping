@@ -140,6 +140,21 @@
     -moz-box-shadow: 0px 0px 100px -44px rgba(34, 60, 80, 0.2) inset;
     box-shadow: 0px 0px 30px -13px   rgba(34, 60, 80, 0.2) inset;
 }
+
+.modal1{
+    width: 200px;
+    height: 400px;
+    background-color: rgba(129, 129, 129, 0.553);
+    display: none;
+    margin-top: 100px;
+    margin-left: 25%;
+    position: absolute;
+    z-index: 99;
+}
+.open_modal{
+    display: block;
+}
+
 @media(min-width:800px){
     .navbars{
         display: flex;

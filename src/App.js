@@ -11,9 +11,9 @@ export default class App extends Component {
     return (
       <div>
         <Navbar/>
-        <Contact/>
+        {/* <Contact/> */}
         {/* <About/> */}
-        {/* <Dashboard/>  */}
+        <Dashboard/> 
         <Footer/>
         {/* <Error/> */}
       </div>

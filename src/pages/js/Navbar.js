@@ -7,7 +7,11 @@ import { AiOutlineShoppingCart } from 'react-icons/ai';
 import logo from '../img/logo.png'
 import '../css/Navbar.css'
 export default class Navbar extends Component {
+ 
   render() {
+     const openModal=()=> {
+      document.querySelector(".modal1").classList.toggle("open_modal");
+    }
     return (
       <div>
 <div className='navbars'>
@@ -24,7 +28,7 @@ export default class Navbar extends Component {
       <img src={logo} alt=""className='logo-img'/>
     </div>
     <div className='katalog'>
-      <span className='menu'><RiMenu4Line/></span>
+      <span className='menu' onClick={openModal} ><RiMenu4Line  /></span>
       <p>Каталог</p>
     </div>
     <div className='inputs'>
@@ -60,6 +64,18 @@ export default class Navbar extends Component {
       </select>
       </div>
 </div>
+      
+      <div className='modal1'>
+         <ul>
+          <li><a href='#!'>diyor</a></li>
+          <li><a href='#!'>diyor</a></li>
+          <li><a href='#!'>diyor</a></li>
+          <li><a href='#!'>diyor</a></li>
+          <li><a href='#!'>diyor</a></li>
+          <li><a href='#!'>diyor</a></li>
+         </ul>
+      </div>
+
       </div>
 
     )
