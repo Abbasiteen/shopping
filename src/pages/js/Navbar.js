@@ -27,8 +27,8 @@ export default class Navbar extends Component {
     <div className='logo'>
       <img src={logo} alt=""className='logo-img'/>
     </div>
-    <div className='katalog'>
-      <span className='menu' onClick={openModal} ><RiMenu4Line  /></span>
+    <div className='katalog' onClick={openModal} >
+      <span className='menu'><RiMenu4Line  /></span>
       <p>Каталог</p>
     </div>
     <div className='inputs'>

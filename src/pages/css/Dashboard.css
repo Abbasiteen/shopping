@@ -6,8 +6,9 @@
     width: 90vw !important; 
     align-items: center !important;
     justify-content: center !important;
-    margin: 10% auto !important;
+    margin: 131px auto !important;
 }
+
 .Новинки_cards{
     width: 80vw;
     margin: 4% auto; 
@@ -209,6 +210,9 @@
     margin: -10px 27px;
 }
 @media(max-width:800px){
+    .main_carousel{
+        margin-top: 25px !important;
+    }
     .carousel-indicators{
         margin-bottom: 0rem !important;
         margin: auto !important;

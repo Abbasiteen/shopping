@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import { FiFacebook } from 'react-icons/fi'
 import { ImGooglePlus } from 'react-icons/im'
 import { AiOutlineLinkedin } from 'react-icons/ai'
+import { TiArrowLeftThick } from 'react-icons/ti'
 import contact from '../img/contact.png'
+import contact_2 from '../img/contact_2.png'
 import '../css/Contact.css'
 
 export default class Dashboard extends Component {
@@ -32,8 +34,16 @@ export default class Dashboard extends Component {
                 </div>
                 <img src={contact} alt='' className='about_img' />
             </div>
+
+
+
             <div className='contact_2'>
-                <img src={contact} alt='' className='about_img2' />
+                <div className='arrow_title'>
+                    <span className='TiArrowLeftThick'><TiArrowLeftThick/></span>
+                    <p className='arrow_t'>Контакты</p>
+                </div>
+                <img src={contact_2} alt='' className='about_img2' />
+                
             </div>
         </div>
       )

@@ -18,7 +18,6 @@
 .contact_title{
     font-size: 36px;
     padding-top: 100px;
-    /* padding-left: 100px; */
     padding-bottom: 50px;
 }
 .contact_links{
@@ -37,7 +36,6 @@
     } 
 }
 .contact_icons{
-    /* width: 22vw; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -56,10 +54,36 @@
     margin-top: 110px;
     width: 55vw;
 }
+
+/* contact_2 */
+.contact_2{
+    width: 80vw;
+    margin: 0 auto;
+}
+.arrow_title{
+    width: 32vw;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    margin-top: 37px;
+}
+.arrow_t{
+    font-weight: bold;
+}
+.TiArrowLeftThick{
+    width: 32px;
+    height: 26px;
+    border-radius: 6px;
+    border: 1px solid #eee;
+    color: #FF6875;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about_img2{
+    width: 77vw;
+}
 @media(min-width:800px){
-    .contact{
-        display: block;
-    }
     .contact_2{
         display: none;
     }
