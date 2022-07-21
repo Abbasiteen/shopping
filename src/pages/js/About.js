@@ -84,6 +84,48 @@ export default class About extends Component {
           </div>
         </div>
         </div>
+
+        {/* about_2 */}
+
+        <div className='about_2'>
+            <div className='main_2'>
+            <p className='main_title_2'>О магазине</p>
+            <div className='about_img_2'>
+                <img src={about} alt='' className='about_i_2' />
+                <button className='about_btn_2'>наш магазин</button>
+            </div>
+            {/* <View style={styles.verticleLine}></View> */}
+            {/* <div className='main_box'>
+            <div className='main_box1'>
+                <p className='box_p'>1800+</p>
+                <p className='box_p1'>отзывов</p>
+            </div>
+            <div className='main_box2'>
+                <p>Реальные отзывы На яндекс, гугл картах и вайлдберис</p>
+            </div>
+            </div>
+            <div className='main_box'>
+            <div className='main_box1'>
+                <p className='box_p'>1800+</p>
+                <p className='box_p1'>отзывов</p>
+            </div>
+            <div className='main_box2'>
+                <p>Реальные отзывы На яндекс, гугл картах и вайлдберис</p>
+            </div>
+            </div>
+            <div className='main_box'>
+            <div className='main_box1'>
+                <p className='box_p'>1800+</p>
+                <p className='box_p1'>отзывов</p>
+            </div>
+            <div className='main_box2'>
+                <p>Реальные отзывы На яндекс, гугл картах и вайлдберис</p>
+            </div>
+            </div> */}
+            </div>
+
+        </div>
+
       </div>
     )
   }
