@@ -43,7 +43,24 @@ export default class Dashboard extends Component {
                     <p className='arrow_t'>Контакты</p>
                 </div>
                 <img src={contact_2} alt='' className='about_img2' />
-                
+                <div className='contact_2_links'>
+                    <div className='links_2'>
+                        <p>+ 375 434 847 28 84 </p>
+                        <p>+ 375 448 473 09</p>
+                        <p>designers@gmail.com</p>
+                    </div>
+                    <div className='links_2'>
+                        <p>г.Юнусабад </p>
+                        <p>Ул. Унверсам </p>
+                        <p>Д. 1, Кв. 43</p>
+                    </div>
+
+                </div>
+                    <div className='contact_2_icons'>
+                        <button className='contact_2_icon'><AiOutlineLinkedin/></button>
+                        <button className='contact_2_icon'><FiFacebook/></button>
+                        <button className='contact_2_icon'><ImGooglePlus/></button>
+                    </div>
             </div>
         </div>
       )
