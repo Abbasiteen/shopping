@@ -68,8 +68,7 @@
     margin-left: 91px;
 }
 .about_i{
-    width: 53vw;
-    height: 43vw;
+    width: 50vw;
 }
 .about_btn{
     width: 222px;
@@ -151,8 +150,8 @@
     position: relative;
 }
 .about_i_2{
-    width: 53vw;
-    height: 43vw;
+    width: 43vw;
+    /* height: 43vw; */
 }
 .about_btn_2{
     width: 222px;
