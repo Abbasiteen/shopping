@@ -1,6 +1,7 @@
-/* body{
-    background-color: #A5A5A5;
-} */
+body{
+    /* background-color: #A5A5A5; */
+    overflow-x: hidden;
+}
 .about{
     width: 80vw;
     display: flex;
@@ -41,10 +42,8 @@
     height: 121px;
     border: .5px solid #ccc;
     border-radius:  0  20px 20px 0;
-    /* padding: 14px 19px; */
 }
 .main_box2 p{
-    /* width: 9.95vw; */
     font-size: 1em;
     margin-left: 19px;
     margin-top: 20px;
@@ -53,7 +52,6 @@
     width: 10vw;
     padding: 20px;
     font-size: 42px;
-    /* font-weight: bold; */
     font-family: 'Kumla';
     font-style: normal;
     font-weight: 400;
@@ -66,9 +64,10 @@
 .about_img{
     margin-top: 270px;
     margin-left: 91px;
+    position: relative;
 }
 .about_i{
-    width: 50vw;
+    width: 55vw;
 }
 .about_btn{
     width: 222px;
@@ -76,12 +75,14 @@
     border: none;
     border-radius: 20px;
     font-size: 17px;
-    margin-right: 5px;
+    position: absolute;
+    right: 20px;
+    bottom: 19px;
 }
 
 .why{
     width: 98vw;
-    height: 130vh;
+    /* height: 130vh; */
     border-radius: 60px;
     box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.08), inset 0px 0px 10px rgba(0, 0, 0, 0.08);
     margin: 0 auto;
@@ -94,14 +95,14 @@
     padding-top: 96px;
     margin-top: 70px;
     margin-left: 100px;
-    /* margin: 96px 100px; */
 }
 .why_cards{
     width: 80vw;
     display: grid;
-    grid-template-columns:  25vw 25vw 25vw;
+    grid-template-columns:  375px 375px 375px;
     gap: 25px 23px;
     margin: 10% auto;
+    overflow: scroll;
 }
 .why_card{
     height: 300px;
@@ -114,7 +115,6 @@
     height: 76px;
     margin-top: 30px;
     margin-left: 30px;
-    /* margin: 30px 30px; */
     background-color: #ff9292;
     color: #fff;
     border-radius: 90px;
@@ -122,7 +122,7 @@
     font-size: 45px;
 }
 .why_p1{
-    width: 14vw;
+    /* width: 14vw; */
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
@@ -130,7 +130,7 @@
     margin: 21px 35px;
 }
 .why_p2{
-    width: 18vw;
+    /* width: 18vw; */
     margin-top: 15px;
     margin-left: 35px;
     font-size: 16px;
@@ -139,31 +139,125 @@
 /* about_2 */
 
 .main_title_2{
-    font-size: 36px;
-    padding-top: 100px;
-    padding-left: 100px;
+    font-size: 22px;
+    padding-top: 25px;
+    padding-left: 24px;
+    line-height: 50px;
 }
-
 .about_img_2{
-    /* margin-top: 270px; */
-    margin-left: 91px;
+    /* margin-left: 91px; */
     position: relative;
+    /* margin: 0 auto; */
+    display: grid;
+    align-items: center;
+    justify-content: center;
 }
 .about_i_2{
-    width: 43vw;
-    /* height: 43vw; */
+    width: 80vw;
+    margin: 0 auto;
+    position: relative;
 }
 .about_btn_2{
-    width: 222px;
-    height: 49px;
+    width: 166px;
+    height: 37px;
     border: none;
-    border-radius: 20px;
-    font-size: 17px;
-    right: 5px;
+    border-radius: 15px;
+    font-size: 14px;
+    right: 50px;
     position: absolute;
+    bottom: 10px;
 }
+.main_box_2{
+    width: 85vw;
+    height: 105px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+    box-shadow: inset 0px 0px 10px rgb(0 0 0 / 8%);
+    margin-top: 25px;
+    /* margin-left: 100px; */
+    margin: 25px auto;   
+}
+.main_box2_2{
+    width: 50%;
+    height: 121px;
+    border: .5px solid #ccc;
+    border-radius:  0  20px 20px 0;
+    
+}
+.main_box2_2 p{
+    font-size: 14px; 
+    margin-left: 10px;
+    /* display: grid; */
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+@media(max-width:1300px){
+    .main_title{
+        padding-top: 100px;
+        padding-left: 50px;
+    }
+    .about_img{
+        margin-left: 40px;
+    } 
+}
+/* .why_2{
+    width: 98vw;
+    height: 130vh;
+    border-radius: 60px;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.08), inset 0px 0px 10px rgba(0, 0, 0, 0.08);
+    margin: 0 auto;
+}
+.why_2_title{
+    font-size: 36px;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 600;
+    padding-top: 96px;
+    margin-top: 70px;
+    margin-left: 100px;
+}
+.why_2_cards{
+    width: 80vw;
+    display: grid;
+    grid-template-columns:  375px 375px 375px;
+    gap: 25px 23px;
+    margin: 10% auto;
+    overflow: scroll;
+}
+.why_2_card{
+    height: 300px;
+    border-radius: 60px;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.08), inset 0px 0px 10px rgba(0, 0, 0, 0.08);
 
-
+}
+.why_2_icon{
+    width: 76px;
+    height: 76px;
+    margin-top: 30px;
+    margin-left: 30px;
+    background-color: #ff9292;
+    color: #fff;
+    border-radius: 90px;
+    border: none;
+    font-size: 45px;
+}
+.why_2_p1{
+    width: 14vw;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 23px;
+    margin: 21px 35px;
+}
+.why_2_p2{
+    width: 18vw;
+    margin-top: 15px;
+    margin-left: 35px;
+    font-size: 16px;
+} */
 @media(min-width:800px){
     /* .about{
         display: block;
@@ -171,9 +265,9 @@
     .about_2{
         display: none;
     }
-    .why_2{
+    /* .why_2{
         display: none;
-    }
+    } */
 }
 @media(max-width:800px){
     .about{
@@ -182,10 +276,10 @@
     .about_2{
         display: block;
     }
-    .why{
+    /* .why{
         display: none;
     }
     .why_2{
         display: block;
-    }
+    } */
 }

@@ -30,10 +30,6 @@
     .contact_links{
         width: 32vw;
     }
-    .about_img{
-        width: 45vw !important;
-        margin-left: 40px;
-    } 
 }
 .contact_icons{
     display: flex;
@@ -50,10 +46,7 @@
     box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.05);
     border-radius: 60px;
 }
-.about_img{
-    margin-top: 110px;
-    width: 55vw;
-}
+
 
 /* contact_2 */
 .contact_2{
@@ -80,9 +73,7 @@
     align-items: center;
     justify-content: center;
 }
-.about_img2{
-    width: 77vw;
-}
+
 .contact_2_links{
     width: 65vw;
     display: flex;
