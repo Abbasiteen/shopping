@@ -167,14 +167,7 @@ width:10vw;
     align-items:center ;
     padding: 30px 50px;
 }
-@media (max-width:991px){
-.companylogo img {
-        padding: 13px 15px;
-    }
-        .companylogo {
-            border-radius: 18px;
-        }
-}
+
 .asas:hover {
 
 background-color: #FF6875;
@@ -200,14 +193,9 @@ background-color: #FF6875;
     background-color: #3A3330;
     color: #fff;
     padding-top: 2%;
+    height: 60vh;
 }
-.footer_card2{
-    width: 90vw;
-    height: 236px;
-    background-color: #26211E;
-    border-radius: 30px;
-    margin: 1% auto;
-} 
+
 .tel2_p{
     width: 85vw;
     display: flex;
@@ -233,15 +221,21 @@ background-color: #FF6875;
     margin-right: 10px;
 }
 .footer_links2{
-    width: 80vw;
+    width: 90vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 5% auto;
 }
-.footer_link2{
-    width: 30vw;
-}
+
+.footer_card2{
+    width: 90vw;
+    height: 236px;
+    background-color: #26211E;
+    border-radius: 30px;
+    margin: 1% auto;
+} 
+
 @media(min-width:1200px){
     .main_f{
         display: block;
@@ -256,5 +250,70 @@ background-color: #FF6875;
     }
     .second_footer{
         display: block;
+    }
+}
+@media (max-width:991px){
+.companylogo img {
+        padding: 13px 15px;
+    }
+        .companylogo {
+            border-radius: 18px;
+        }
+        .footer_inputs {
+            width: 25vw;
+        }
+}
+
+@media(max-width:500px){
+    .second_footer {
+        height: 70vh !important;
+    }
+    .footer_links2{
+        display: block;
+    }
+    .footer_card2 {
+        height: 22vh;
+    }
+    .tel {
+        width: 8em;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        /* padding-left: 50px; */
+    }
+    .tel_i {
+        width: 17px;
+        height: 17px;
+        border: none;
+        border-radius: 30px;
+        background-color: #FF6875;
+        color: #fff;
+        font-size: 7px;
+        padding: 2px 5px;
+    }
+    .tel_t {
+        margin-top: 15px;
+        font-size: 13px;
+        font-weight: bolder;
+        color: #fff;
+    }
+    .tel_btn {
+        width: 92px;
+        height: 28px;
+        border: none;
+        background-color: #FF6875;
+        color: #fff;
+        font-size: 6px;
+        border-radius: 3.95px;
+    }
+    .footer_inputs {
+        width: 40vw;
+        height: 25px;
+    }
+    .footer_text{
+        font-size: 10px;
+    }
+    .footer_p{
+        display: none;
     }
 }

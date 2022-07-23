@@ -99,6 +99,33 @@ export default class Footer extends Component {
         </footer>
 
         <footer className='second_footer'>
+            <div className='f_logo'>
+              <img src={logo} alt=""className='f_logo'/>
+            </div>
+            <div className='footer_links2'>
+            <div className='footer_link2'>
+              <p>Иинформация</p>
+              <hr/>
+              <ul className='footer_ul'>
+                <li>О нас</li>
+                <li>Условия использования</li>
+                <li>Оплата и доставка</li>
+                <li>Как заказать</li>
+                <li>Вопросы и ответы</li>
+              </ul>
+            </div>
+            <div className='footer_link2'>
+              <p>Иинформация</p>
+              <hr/>
+              <ul className='footer_ul'>
+                <li>О нас</li>
+                <li>Условия использования</li>
+                <li>Оплата и доставка</li>
+                <li>Как заказать</li>
+                <li>Вопросы и ответы</li>
+              </ul>
+            </div>
+            </div>
             <div className='footer_card2'>
               <div className='tel2_p'>
               <div className='tel'>
@@ -127,37 +154,9 @@ export default class Footer extends Component {
               </div>
               </div>
             </div>
-            <div className='footer_links2'>
-            <div className='footer_link2'>
-              <p>Иинформация</p>
-              <hr/>
-              <ul className='footer_ul'>
-                <li>О нас</li>
-                <li>Условия использования</li>
-                <li>Оплата и доставка</li>
-                <li>Как заказать</li>
-                <li>Вопросы и ответы</li>
-              </ul>
-            </div>
-            <div className='footer_link2'>
-              <p>Иинформация</p>
-              <hr/>
-              <ul className='footer_ul'>
-                <li>О нас</li>
-                <li>Условия использования</li>
-                <li>Оплата и доставка</li>
-                <li>Как заказать</li>
-                <li>Вопросы и ответы</li>
-              </ul>
-            </div>
-
-            </div>
           <div className='footer_end'>
           
-            <div className='f_logo'>
-              <img src={logo} alt=""className='f_logo'/>
-            </div>
-            <p className='footer_p'>© 2022 Lift Media. All Rights Reserved. </p>
+
           </div>
         </footer>
       </div>

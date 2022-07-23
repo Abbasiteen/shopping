@@ -7,12 +7,12 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+    margin: 0 auto;
 }
 .main_title{
     font-size: 36px;
     padding-top: 100px;
-    padding-left: 100px;
+    /* padding-left: 100px; */
     padding-bottom: 50px;
 }
 .main_box{
@@ -24,13 +24,9 @@ body{
     border-radius: 20px;
     box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.08);
     margin-top: 11px;
-    margin-left: 100px;
+    /* margin-left: 100px; */
 }
-@media(max-width:1000px){
-    .main_box{
-        margin-left: 31px;
-    }
-}
+
 .main_box1{
     width: 50%;
     height: 121px;
@@ -62,12 +58,12 @@ body{
     margin-left: 25px;
 }
 .about_img{
-    margin-top: 270px;
+    margin-top: 205px;
     margin-left: 91px;
     position: relative;
 }
 .about_i{
-    width: 55vw;
+    width: 48vw;
 }
 .about_btn{
     width: 222px;
@@ -179,9 +175,15 @@ body{
     /* margin-left: 100px; */
     margin: 25px auto;   
 }
+.main_box1_2{
+    width: 50%;
+    height: 105px;
+    border: .5px solid #ccc;
+    border-radius: 20px 0 0 20px;
+}
 .main_box2_2{
     width: 50%;
-    height: 121px;
+    height: 105px;
     border: .5px solid #ccc;
     border-radius:  0  20px 20px 0;
     
@@ -203,9 +205,9 @@ body{
         margin-left: 40px;
     } 
 }
-/* .why_2{
+.why_2{
     width: 98vw;
-    height: 130vh;
+    height: 100vh;
     border-radius: 60px;
     box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.08), inset 0px 0px 10px rgba(0, 0, 0, 0.08);
     margin: 0 auto;
@@ -245,7 +247,7 @@ body{
     font-size: 45px;
 }
 .why_2_p1{
-    width: 14vw;
+    /* width: 14vw; */
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
@@ -253,11 +255,29 @@ body{
     margin: 21px 35px;
 }
 .why_2_p2{
-    width: 18vw;
+    /* width: 18vw; */
     margin-top: 15px;
     margin-left: 35px;
     font-size: 16px;
-} */
+}
+@media(max-width:1000px){
+    .about_img {
+        margin-left: 10px;
+        margin-top: 200px;
+    }
+    .about_i {
+        width: 50vw;
+    }
+    .main_box2 p {
+        font-size: 14px;
+        margin-left: 5px;
+        margin-top: 20px;
+    }
+    .main_box {
+        width: 300px;
+    }
+}
+
 @media(min-width:800px){
     /* .about{
         display: block;
@@ -276,10 +296,10 @@ body{
     .about_2{
         display: block;
     }
-    /* .why{
+    .why{
         display: none;
     }
     .why_2{
         display: block;
-    } */
+    }
 }

@@ -96,7 +96,7 @@ export default class About extends Component {
             </div>
             {/* <View style={styles.verticleLine}></View> */}
             <div className='main_box_2'>
-            <div className='main_box1'>
+            <div className='main_box1_2'>
                 <p className='box_p'>1800+</p>
                 <p className='box_p1'>отзывов</p>
             </div>
@@ -105,7 +105,7 @@ export default class About extends Component {
             </div>
             </div>
             <div className='main_box_2'>
-            <div className='main_box1'>
+            <div className='main_box1_2'>
                 <p className='box_p'>1800+</p>
                 <p className='box_p1'>отзывов</p>
             </div>
@@ -114,7 +114,7 @@ export default class About extends Component {
             </div>
             </div>
             <div className='main_box_2'>
-            <div className='main_box1'>
+            <div className='main_box1_2'>
                 <p className='box_p'>1800+</p>
                 <p className='box_p1'>отзывов</p>
             </div>
@@ -158,7 +158,7 @@ export default class About extends Component {
           </div>
         </div>
         </div>
-          {/* <div className='why_2'>
+          <div className='why_2'>
           <h1 className='why_2_title'>Почему выбирают нас</h1>
         <div className='why_2_cards'>
         <div className='why_2_card'>
@@ -192,7 +192,7 @@ export default class About extends Component {
             <p className='why_2_p2'>Sar kobelt: funktionsrätt. Kaliga avis. Kokror tvåhandsbeslut även om bena. Jigon speligen holigt. </p>
           </div>
         </div>
-        </div> */}
+        </div>
             
 
         </div>

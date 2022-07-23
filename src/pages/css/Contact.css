@@ -26,6 +26,9 @@
     align-items: center;
     justify-content: space-between;
 }
+.about_img{
+    width: 50vw;
+}
 @media(max-width:1300px){
     .contact_links{
         width: 32vw;
@@ -96,6 +99,9 @@
     background: linear-gradient(98.34deg, #FFFFFF 0%, #FFFFFF 100%);
     box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.05);
     border-radius: 60px;
+}
+.about_img2{
+    width: 80vw;
 }
 @media(max-width: 500px){
     .contact_2_links{

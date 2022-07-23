@@ -1,0 +1,85 @@
+.inform{
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.inform_title{
+    width: 25vw;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    margin-top: 137px;
+}
+.inform_t{
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    color: #000000;
+}
+.TiArrowLeftThick{
+    width: 32px;
+    height: 26px;
+    border-radius: 6px;
+    border: 1px solid #eee;
+    color: #FF6875;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form{
+    width: 727px;
+    height: 795px;
+    background: #FFFFFF;
+    border: 1px solid #EFEFEF;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.08);
+    border-radius: 6px;
+    
+}
+.form p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    margin-left: 43px;
+    color: #011043;
+    margin-top: 30px;
+
+}
+.form_name{
+    padding-top: 60px;
+    /* padding-left: 43px; */
+
+}
+input{
+    width: 641px;
+    height: 66px;
+    /* padding-left: 43px; */
+    /* left: 362px; */
+    /* top: 476px; */
+    margin: 0 42px; 
+    background: rgba(196, 196, 196, 0.2);
+    border: 1px solid #EFEFEF;
+    border-radius: 6px;
+    
+}
+.form_btn{
+    width: 641px;
+    height: 66px;
+    background: #359740;
+    color: #fff;
+    border: 1px solid #EFEFEF;
+    border-radius: 6px;
+    margin: 75px 42px;
+}
+.inform_card{
+    
+}
+.card_texts{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

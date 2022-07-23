@@ -132,7 +132,7 @@
     gap: 25px 23px;
     margin: 5% auto;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
 }
 @media(max-width:1450px){
     .famous_cards{
