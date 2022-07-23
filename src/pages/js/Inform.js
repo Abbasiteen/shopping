@@ -14,19 +14,19 @@ export default class Footer extends Component {
                 <div className='form'>
                     <div className='name'>
                     <p className='form_name'>Имя</p>
-                    <input placeholder='Diyor' />
+                    <input className='input' placeholder='Diyor' />
                     </div>
                 <div className='lastname'>
                     <p className='form_lastname'>Фамилия</p>
-                    <input placeholder='Abdusalomov' />
+                    <input className='input' placeholder='Abdusalomov' />
                 </div>
                 <div className='num'>
                     <p className='form_num'>Телефонный номер</p>
-                    <input type={'number'} placeholder='+998943048710' />
+                    <input className='input' type={'number'} placeholder='+998943048710' />
                 </div>
                 <div className='mail'>
                     <p className='form_email'>электронной почты</p>
-                    <input type={'email'} placeholder='diyorbekabdusalomov05@gmail.com' />
+                    <input className='input' type={'email'} placeholder='diyorbekabdusalomov05@gmail.com' />
                 </div>
                 <button className='form_btn'>Отправить</button>
                 </div>

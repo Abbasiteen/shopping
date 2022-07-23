@@ -7,6 +7,7 @@ import About from './pages/js/About'
 import Contact from './pages/js/Contact'
 import Inform from './pages/js/Inform'
 import Home from './pages/js/Home'
+import Discount from './pages/js/Discount'
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 export default class App extends Component {
   render() {
@@ -19,6 +20,8 @@ export default class App extends Component {
               <Route exact path='/Contact' element={<Contact/>}></Route>
               <Route exact path='/About' element={<About/>}></Route>
               <Route exact path='/Inform' element={<Inform/>}></Route>
+              <Route exact path='/Inform' element={<Inform/>}></Route>
+              <Route exact path='/All' element={<Discount/>}></Route>
             </Routes>
         </Router>
         <Footer/>

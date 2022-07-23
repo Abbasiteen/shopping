@@ -108,9 +108,6 @@ width:10vw;
     color: #fff;
     padding-left: 30px;
 }
-.f_input{
-    padding-left: 30px;
-}
 .footer_inputs{
     width: 15vw;
     height: 35px;
@@ -119,6 +116,7 @@ width:10vw;
     /* color: rgba(255, 255, 255, 0.537); */
     border-radius: 30px;
     border: none;
+    margin-left: 25px;
 }
 .footer_icons{
     width: 10vw;
@@ -193,7 +191,7 @@ background-color: #FF6875;
     background-color: #3A3330;
     color: #fff;
     padding-top: 2%;
-    height: 60vh;
+    /* height: 60vh; */
 }
 
 .tel2_p{
@@ -221,7 +219,7 @@ background-color: #FF6875;
     margin-right: 10px;
 }
 .footer_links2{
-    width: 90vw;
+    width: 70vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -230,13 +228,13 @@ background-color: #FF6875;
 
 .footer_card2{
     width: 90vw;
-    height: 236px;
+    /* height: 236px; */
     background-color: #26211E;
     border-radius: 30px;
     margin: 1% auto;
 } 
 
-@media(min-width:1200px){
+@media(min-width:1100px){
     .main_f{
         display: block;
     }
@@ -244,13 +242,16 @@ background-color: #FF6875;
         display: none;
     }
 }
-@media(max-width:1200px){
+@media(max-width:1100px){
     .main_f{
         display: none;
     }
     .second_footer{
         display: block;
     }
+        .footer_links2 {
+            width: 60vw;
+        }
 }
 @media (max-width:991px){
 .companylogo img {
@@ -261,19 +262,23 @@ background-color: #FF6875;
         }
         .footer_inputs {
             width: 25vw;
+            margin-left: 25px;
+        }
+        .footer_links2{
+            width: 80vw;
         }
 }
 
 @media(max-width:500px){
     .second_footer {
-        height: 70vh !important;
+        /* height: 70vh !important; */
     }
     .footer_links2{
         display: block;
     }
-    .footer_card2 {
+    /* .footer_card2 {
         height: 22vh;
-    }
+    } */
     .tel {
         width: 8em;
         display: flex;
@@ -309,6 +314,7 @@ background-color: #FF6875;
     .footer_inputs {
         width: 40vw;
         height: 25px;
+        margin-left: 25px;
     }
     .footer_text{
         font-size: 10px;

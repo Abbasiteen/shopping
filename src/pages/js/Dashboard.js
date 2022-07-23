@@ -89,7 +89,7 @@ if(push){
             <p className='card_names'>{item.name}</p>
             <p className='prices'>{item.price}</p>
             <div className='card_footer'>
-              <Select placeholder='1шт.' className='amounts' options={options} />
+              <Select placeholder='1шт.' className='card_amounts' options={options} />
               <div className='card_btnn' onClick={()=>this.shop(item.name,item.Image,item.price,item.skidka)}>
                 <button className='btnn'><TbShoppingCartPlus/></button>
               </div>
@@ -98,9 +98,14 @@ if(push){
         </div>
         </div>
         <div className='Скидки'>
-        <div className='Скидки_title'>
-          <p className='Скидки_title_t'>Скидки</p>
-          <p className='Скидки_title_i'>%</p>
+        <div className='Скидки_t'>
+          <div className='Скидки_title'>
+            <p className='Скидки_title_t'>Скидки</p>
+            <p className='Скидки_title_i'>%</p>
+          </div>
+          < div className = 'Скидки_cards_all' >
+            <a href='/All'> Все товары в категории </a>
+          </ div>
         </div>
         <div className='Скидки_cards'>
           <div className='Скидки_card'>
@@ -109,7 +114,7 @@ if(push){
             <p className='card_names'>Cовместимость со вспышками — AD200/AD200Pro</p>
             <p className='prices'>62 392,23 Сум</p>
             <div className='card_footer'>
-              <Select placeholder='1шт.' className='amounts' options={options} />
+              <Select placeholder='1шт.' className='card_amounts' options={options} />
               <div className='card_btnn'>
                 <button className='btnn'><TbShoppingCartPlus/></button>
               </div>
@@ -121,7 +126,7 @@ if(push){
             <p className='card_names'>Cовместимость со вспышками — AD200/AD200Pro</p>
             <p className='prices'>62 392,23 Сум</p>
             <div className='card_footer'>
-              <Select placeholder='1шт.' className='amounts' options={options} />
+              <Select placeholder='1шт.' className='card_amounts' options={options} />
               <div className='card_btnn'>
                 <button className='btnn'><TbShoppingCartPlus/></button>
               </div>
@@ -133,7 +138,7 @@ if(push){
             <p className='card_names'>Cовместимость со вспышками — AD200/AD200Pro</p>
             <p className='prices'>62 392,23 Сум</p>
             <div className='card_footer'>
-              <Select placeholder='1шт.' className='amounts' options={options} />
+              <Select placeholder='1шт.' className='card_amounts' options={options} />
               <div className='card_btnn'>
                 <button className='btnn'><TbShoppingCartPlus/></button>
               </div>
@@ -145,7 +150,7 @@ if(push){
             <p className='card_names'>Cовместимость со вспышками — AD200/AD200Pro</p>
             <p className='prices'>62 392,23 Сум</p>
             <div className='card_footer'>
-              <Select placeholder='1шт.' className='amounts' options={options} />
+              <Select placeholder='1шт.' className='card_amounts' options={options} />
               <div className='card_btnn'>
                 <button className='btnn'><TbShoppingCartPlus/></button>
               </div>
@@ -209,7 +214,7 @@ if(push){
             <p className='card_names_x'>Cовместимость со вспышками — AD200/AD200Pro</p>
             <p className='prices'>62 392,23 Сум</p>
             <div className='card_footer'>
-              <Select placeholder='1шт.' className='amounts' options={options} />
+              <Select placeholder='1шт.' className='card_amounts' options={options} />
               <div className='card_btnn'>
                 <button className='btnn'><TbShoppingCartPlus/></button>
               </div>
@@ -221,7 +226,7 @@ if(push){
             <p className='card_names_x'>Cовместимость со вспышками — AD200/AD200Pro</p>
             <p className='prices'>62 392,23 Сум</p>
             <div className='card_footer'>
-              <Select placeholder='1шт.' className='amounts' options={options} />
+              <Select placeholder='1шт.' className='card_amounts' options={options} />
               <div className='card_btnn'>
                 <button className='btnn'><TbShoppingCartPlus/></button>
               </div>
@@ -233,7 +238,7 @@ if(push){
             <p className='card_names_x'>Cовместимость со вспышками — AD200/AD200Pro</p>
             <p className='prices'>62 392,23 Сум</p>
             <div className='card_footer'>
-              <Select placeholder='1шт.' className='amounts' options={options} />
+              <Select placeholder='1шт.' className='card_amounts' options={options} />
               <div className='card_btnn'>
                 <button className='btnn'><TbShoppingCartPlus/></button>
               </div>
@@ -245,7 +250,7 @@ if(push){
             <p className='card_names_x'>Cовместимость со вспышками — AD200/AD200Pro</p>
             <p className='prices'>62 392,23 Сум</p>
             <div className='card_footer'>
-              <Select placeholder='1шт.' className='amounts' options={options} />
+              <Select placeholder='1шт.' className='card_amounts' options={options} />
               <div className='card_btnn'>
                 <button className='btnn'><TbShoppingCartPlus/></button>
               </div>
