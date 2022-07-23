@@ -14,8 +14,44 @@ const options = [
   { value: '3 шт.', label: '3 шт.' }
 ]
 const cards=require("../js/json")
-export default class Dashboard extends Component {
+export default class Dashboard extends Component { 
+  state={
+      data:cards,
+      buy:[]
+    }
+    shop=(name,img,price,skidka)=>{
+      var push=true;
+var data1={
+  "name":name,
+  "img":img,
+  "price":price,
+  "skidka":skidka,
+  "count":1
+}
+if(this.state.buy[0]==undefined){
+push=true;
+}else{
+for(var i=0; i<this.state.buy.length;i++){
+  if(this.state.buy[i].name===data1.name){
+     this.state.buy[i].count++
+     push=false;
+  }
+}
+
+}
+if(push){
+  this.state.buy.push(data1)
+}
+      localStorage.setItem("names", JSON.stringify(this.state.buy));
+
+      var storedNames = JSON.parse(localStorage.getItem("names"));
+      console.log(storedNames);
+    }
+    componentDidMount(){
+    
+    }
   render() {
+   
     return (
       <div>
         <div className='main'>
@@ -47,62 +83,18 @@ export default class Dashboard extends Component {
         <div className='Новинки'>
           <p className='Новинки_title'>Новинки</p>
         <div className='Новинки_cards'>
-       {/* {cards.map(item=>{ 
+      {this.state.data.map(item=>{ 
         return <div className='Новинки_card'>
             <img src={item.Image} alt='' className='card_imgg'/>
             <p className='card_names'>{item.name}</p>
             <p className='prices'>{item.price}</p>
             <div className='card_footer'>
               <Select placeholder='1шт.' className='amounts' options={options} />
-              <div className='card_btnn'>
+              <div className='card_btnn' onClick={()=>this.shop(item.name,item.Image,item.price,item.skidka)}>
                 <button className='btnn'><TbShoppingCartPlus/></button>
               </div>
             </div>
-          </div>})}  */}
-          <div className='Новинки_card'>
-            <img src={card_img} alt='' className='card_imgg'/>
-            <p className='card_names'>Cовместимость со вспышками — AD200/AD200Pro</p>
-            <p className='prices'>62 392,23 Сум</p>
-            <div className='card_footer'>
-              <Select placeholder='1шт.' className='amounts' options={options} />
-              <div className='card_btnn'>
-                <button className='btnn'><TbShoppingCartPlus/></button>
-              </div>
-            </div>
-          </div>
-          <div className='Новинки_card'>
-            <img src={card_img} alt='' className='card_imgg'/>
-            <p className='card_names'>Cовместимость со вспышками — AD200/AD200Pro</p>
-            <p className='prices'>62 392,23 Сум</p>
-            <div className='card_footer'>
-              <Select placeholder='1шт.' className='amounts' options={options} />
-              <div className='card_btnn'>
-                <button className='btnn'><TbShoppingCartPlus/></button>
-              </div>
-            </div>
-          </div>
-          <div className='Новинки_card'>
-            <img src={card_img} alt='' className='card_imgg'/>
-            <p className='card_names'>Cовместимость со вспышками — AD200/AD200Pro</p>
-            <p className='prices'>62 392,23 Сум</p>
-            <div className='card_footer'>
-              <Select placeholder='1шт.' className='amounts' options={options} />
-              <div className='card_btnn'>
-                <button className='btnn'><TbShoppingCartPlus/></button>
-              </div>
-            </div>
-          </div>
-         <div className='Новинки_card'>
-            <img src={card_img} alt='' className='card_imgg'/>
-            <p className='card_names'>Cовместимость со вспышками — AD200/AD200Pro</p>
-            <p className='prices'>62 392,23 Сум</p>
-            <div className='card_footer'>
-              <Select placeholder='1шт.' className='amounts' options={options} />
-              <div className='card_btnn'>
-                <button className='btnn'><TbShoppingCartPlus/></button>
-              </div>
-            </div>
-          </div>
+          </div>})} 
         </div>
         </div>
         <div className='Скидки'>

@@ -21,6 +21,7 @@ export default class App extends Component {
               <Route exact path='/Inform' element={<Inform/>}></Route>
             </Routes>
         </Router>
+        <Footer/>
       </div>
     )
   }         
