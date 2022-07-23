@@ -67,12 +67,10 @@ export default class Navbar extends Component {
       
       <div className='modal1'>
          <ul>
-          <li><a href='#!'>diyor</a></li>
-          <li><a href='#!'>diyor</a></li>
-          <li><a href='#!'>diyor</a></li>
-          <li><a href='#!'>diyor</a></li>
-          <li><a href='#!'>diyor</a></li>
-          <li><a href='#!'>diyor</a></li>
+          <li><a href='/'>Main</a></li>
+          <li><a href='/Contact'>Contact</a></li>
+          <li><a href='/About'>About</a></li>
+          <li><a href='/Inform'>Inform</a></li>
          </ul>
       </div>
 

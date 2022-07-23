@@ -1,14 +1,11 @@
 .inform{
-    width: 80vw;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    width: 70vw;
     margin: 0 auto;
 }
 .inform_title{
-    width: 25vw;
+    width: 30vw;
     display: flex;
-    text-align: center;
+    align-items: center;
     justify-content: space-between;
     margin-top: 137px;
 }
@@ -29,8 +26,14 @@
     align-items: center;
     justify-content: center;
 }
+.inform_main{
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 .form{
-    width: 727px;
+    width: 40vw;
     height: 795px;
     background: #FFFFFF;
     border: 1px solid #EFEFEF;
@@ -55,7 +58,7 @@
 
 }
 input{
-    width: 641px;
+    width: 30vw;
     height: 66px;
     /* padding-left: 43px; */
     /* left: 362px; */
@@ -67,19 +70,31 @@ input{
     
 }
 .form_btn{
-    width: 641px;
+    width: 30vw;
     height: 66px;
     background: #359740;
     color: #fff;
     border: 1px solid #EFEFEF;
     border-radius: 6px;
     margin: 75px 42px;
+    
 }
 .inform_card{
+    width: 35vw;
+    height: 470px;
+    background: #FFFFFF;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.08);
+    border-radius: 6px;
+    padding: 20px;
     
 }
 .card_texts{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}.card_2{
+    font-weight: bold;
+}
+.card_end2{
+    color: #00000084;
 }

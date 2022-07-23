@@ -54,12 +54,9 @@
     margin: 27px;
 }
 .amounts{
-    width: 92px;
-    height: 30px;
+    width: 92px !important;
+    height: 30px !important;
     border-radius: 80px;
-}
-.css-1s2u09g-control{
-    border-radius: 50px !important;
 }
 .btnn{
     border: none;
