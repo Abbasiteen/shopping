@@ -3,7 +3,7 @@ import Select from 'react-select';
 import { TbShoppingCartPlus } from 'react-icons/tb'
 import { TiArrowLeftThick } from 'react-icons/ti'
 
-import '../css/Discount.css'
+import '../css/Xit.css'
 
 const options = [
     { value: '1 шт.', label: '1шт.' },
@@ -52,17 +52,14 @@ export default class Error extends Component {
     return (
       <div>
         <a href='/'>
-            <div className='Dicount_title'>
+            <div className='Xit_title'>
                 <span className='TiArrowLeftThick'><TiArrowLeftThick/></span>
-                <div className='Dicount_t'>
-                    <p className='Dicount_title_t'>Скидки</p>
-                    <p className='Dicount_title_i'>%</p>
-                </div>
+                    <p className='Xit_title_t'>Хиты продаж</p>
             </div>
         </a>
-        <div className='Dicount_cards'>
+        <div className='Xit_cards'>
       {this.state.data.map(item=>{ 
-        return <div className='Dicount_card'>
+        return <div className='Xit_card'>
             <img src={item.Image} alt='' className='card_imgg'/>
             <p className='card_names'>{item.name}</p>
             <p className='prices'>{item.price}</p>

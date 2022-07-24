@@ -8,6 +8,8 @@ import Contact from './pages/js/Contact'
 import Inform from './pages/js/Inform'
 import Home from './pages/js/Home'
 import Discount from './pages/js/Discount'
+import New from './pages/js/News'
+import Xit from './pages/js/Xit'
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 export default class App extends Component {
   render() {
@@ -22,6 +24,8 @@ export default class App extends Component {
               <Route exact path='/Inform' element={<Inform/>}></Route>
               <Route exact path='/Inform' element={<Inform/>}></Route>
               <Route exact path='/All' element={<Discount/>}></Route>
+              <Route exact path='/News' element={<New/>}></Route>
+              <Route exact path='/xit' element={<Xit/>}></Route>
             </Routes>
         </Router>
         <Footer/>

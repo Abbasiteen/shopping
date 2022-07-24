@@ -81,7 +81,13 @@ if(push){
           </div>
         </div>
         <div className='Новинки'>
+          <div className='new_t'>
           <p className='Новинки_title'>Новинки</p>
+          < div className = 'Новинки_link' >
+            <a href='/News'> Все товары в категории </a>
+          </ div>
+          </div>
+
         <div className='Новинки_cards'>
       {this.state.data.map(item=>{ 
         return <div className='Новинки_card'>
@@ -204,9 +210,15 @@ if(push){
           </div>
         </div>
         <div className='xit'>
+          <div className='xit_t'>
         <div className='xit_title'>
           <p className='xit_title_t'>Хиты продаж</p>
         </div>
+        < div className = 'xit_links' >
+            <a href='/xit'> Все товары в категории </a>
+          </ div>  
+          </div>
+
         <div className='xit_cards'>
           <div className='xit_card'>
             <img src={card_img} alt='' className='card_imgg'/>

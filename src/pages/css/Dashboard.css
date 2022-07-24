@@ -8,7 +8,12 @@
     justify-content: center !important;
     margin: 131px auto !important;
 }
-
+.new_t{
+    width: 90vw;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
 .Новинки_cards{
     width: 80vw;
     /* margin: 4% auto; 
@@ -23,10 +28,6 @@
     /* flex-wrap: wrap; */
     margin: 0 auto;
 }
-.Новинки_card .card_imgg{
-width: 100%;
-border-radius: 30px;
-}
 @media(max-width:1450px){
     .Новинки_cards{
         overflow: scroll;
@@ -38,6 +39,15 @@ border-radius: 30px;
     font-size: 2em;
     margin-left: 6%;
     margin-top: 5%;
+}
+.Новинки_link{
+    margin-top: 6%;
+}
+.Новинки_link a{
+    /* margin-top: 5%; */
+    font-size: 1em;
+    color: #FF6875;
+    text-decoration: none;
 }
 .Новинки_card{
     width: 302px;
@@ -51,6 +61,8 @@ border-radius: 30px;
     box-shadow: 0px 0px 3px 1px rgba(34, 60, 80, 0.2);
 }
 .card_imgg{
+    width: 100%;
+    border-radius: 30px;
     padding: 10px;
 }
 .card_names{
@@ -90,10 +102,21 @@ border-radius: 30px;
 .Скидки{
     margin-top: 5%;
 }
+.Скидки_t{
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Скидки_cards_all a{
+    color: #FF6875;
+    text-decoration: none;
+}
 .Скидки_title{
     display: flex;
     align-items: center;
     font-weight: bold;
+    margin-left: 6%;
 }
 .Скидки_title_t{
     font-size: 2em;
@@ -174,6 +197,12 @@ border-radius: 30px;
 .camer_text{
     text-align: center;
 }
+.xit_t{
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 .card_xit{
     width: 72px;
     height: 19px;
@@ -191,8 +220,14 @@ border-radius: 30px;
     display: flex;
     align-items: center;
     font-weight: bold;
+    margin-left: 6%;
+}
+.xit_links a{
+    text-decoration: none;
+    color: #FF6875;
 }
 .xit_title_t{
+    width: 20vw;
     font-size: 2em;
     margin-left: 6%;
 }
