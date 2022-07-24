@@ -15,18 +15,18 @@
     justify-content: space-between;
 }
 .Новинки_cards{
-    width: 80vw;
-    /* margin: 4% auto; 
+    /* width: 70vw;
+    margin: 4% auto; 
     display: grid;
     grid-template-columns: 302px 302px 302px 302px;
     gap: 44px;
-    margin: 0 auto; */
-    overflow: scroll;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    /* flex-wrap: wrap; */
     margin: 0 auto;
+    overflow-y: hidden; */
+        width: 80vw;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
 }
 @media(max-width:1450px){
     .Новинки_cards{

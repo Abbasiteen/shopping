@@ -2,8 +2,11 @@
     width: 70vw;
     margin: 0 auto;
 }
+.inform a{
+    text-decoration: none;
+}
 .inform_title{
-    width: 30vw;
+    width: 25vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -27,7 +30,7 @@
     justify-content: center;
 }
 .inform_main{
-    width: 80vw;
+    width: 70vw;
     display: flex;
     align-items: center;
     justify-content: space-between;

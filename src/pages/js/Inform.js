@@ -6,10 +6,12 @@ export default class Footer extends Component {
     return (
       <div>
         <div className='inform'>
+        <a href='/Ordered'>
             <div className='inform_title'>
                 <span className='TiArrowLeftThick'><TiArrowLeftThick/></span>
                 <p className='inform_t'>Персональные данные</p>
             </div>
+        </a>
             <div className='inform_main'>
                 <div className='form'>
                     <div className='name'>
@@ -52,6 +54,7 @@ export default class Footer extends Component {
 ** При необходимости</p>
                 </div>
                 </div>
+            
             </div>
         </div>
       </div> 

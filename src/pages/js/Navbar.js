@@ -35,10 +35,12 @@ export default class Navbar extends Component {
       <input className='header_inputs' placeholder='Что желаете найти?'/>
       <span className='FiSearch'><FiSearch/></span> 
     </div>
+    <a href='/Ordered'>
     <div className='basket'>
       <span><AiOutlineShoppingCart/></span>
       <p>Корзина</p>
     </div>
+    </a>
   </div>
 </div>
 <div className='navbar_2'>
@@ -71,6 +73,7 @@ export default class Navbar extends Component {
           <li><a href='/Contact'>Contact</a></li>
           <li><a href='/About'>About</a></li>
           <li><a href='/Inform'>Inform</a></li>
+          <li><a href='/products'>products</a></li>
          </ul>
       </div>
 

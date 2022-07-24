@@ -9,7 +9,10 @@ import Inform from './pages/js/Inform'
 import Home from './pages/js/Home'
 import Discount from './pages/js/Discount'
 import New from './pages/js/News'
-import Xit from './pages/js/Xit'
+import Xit from './pages/js/Xit';
+import './App.css'
+import Products from './pages/js/Products'
+import Ordered from './pages/js/Basket'
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 export default class App extends Component {
   render() {
@@ -18,14 +21,16 @@ export default class App extends Component {
            <Navbar/>
         <Router>
             <Routes>
-              <Route exact path='/' element={<Dashboard/>}></Route>
-              <Route exact path='/Contact' element={<Contact/>}></Route>
-              <Route exact path='/About' element={<About/>}></Route>
-              <Route exact path='/Inform' element={<Inform/>}></Route>
-              <Route exact path='/Inform' element={<Inform/>}></Route>
-              <Route exact path='/All' element={<Discount/>}></Route>
-              <Route exact path='/News' element={<New/>}></Route>
-              <Route exact path='/xit' element={<Xit/>}></Route>
+              <Route  path='/' element={<Dashboard/>}></Route>
+              <Route  path='/Contact' element={<Contact/>}></Route>
+              <Route  path='/About' element={<About/>}></Route>
+              <Route  path='/Inform' element={<Inform/>}></Route>
+              <Route  path='/Inform' element={<Inform/>}></Route>
+              <Route  path='/All' element={<Discount/>}></Route>
+              <Route  path='/News' element={<New/>}></Route>
+              <Route  path='/xit' element={<Xit/>}></Route>
+              <Route  path='/products' element={<Products/>}></Route>
+              <Route  path='/Ordered' element={<Ordered/>}></Route>
             </Routes>
         </Router>
         <Footer/>

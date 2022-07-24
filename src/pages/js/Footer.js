@@ -10,6 +10,10 @@ import samsung from '../img/samsung.png'
 import huawe from '../img/huawe.png'
 import artel from '../img/artel.png'
 import mi from '../img/mi.png'
+import {BiHomeAlt} from 'react-icons/bi'
+import { TbLayoutGrid } from 'react-icons/tb'
+import { RiShoppingCartLine } from 'react-icons/ri'
+import { CgMenuLeft } from 'react-icons/cg'
 import '../css/Footer.css'
 export default class Footer extends Component {
   render() {
@@ -17,9 +21,9 @@ export default class Footer extends Component {
       <div>
       
         
-           <div className='brend'>
+        <div className='brend'>
           <h1 className='brend_t'>Популярные бренды</h1>
-<div className='companylogo'>
+          <div className='companylogo'>
           <div className='asas'>
           <img src={apple} alt='' id="ss" />
             </div>
@@ -30,9 +34,11 @@ export default class Footer extends Component {
           <img src={huawe} alt='' />
             </div> 
             <div className='asas'>
-          <img src={artel} alt='' />
-            </div> <div className='asas'>
-          <img src={mi} alt='' id='ss' /></div> 
+                <img src={artel} alt='' />
+            </div> 
+            <div className='asas'>
+                <img src={mi} alt='' id='ss' />
+            </div> 
 </div>
  </div>
         <footer className='main_f'>
@@ -159,6 +165,13 @@ export default class Footer extends Component {
 
           </div>
         </footer>
+
+        <div className='footer_menu'>
+          <span><BiHomeAlt/>Главная</span>
+          <span><TbLayoutGrid/>Главная</span>
+          <span><RiShoppingCartLine/>Главная</span>
+          <span><CgMenuLeft/>Главная</span>
+        </div>
       </div>
     )
   }

@@ -21,9 +21,9 @@ export default class Dashboard extends Component {
     }
     shop=(name,img,price,skidka)=>{
       var push=true;
-var data1={
-  "name":name,
-  "img":img,
+      var data1={
+      "name":name,
+      "img":img,
   "price":price,
   "skidka":skidka,
   "count":1
@@ -37,18 +37,17 @@ for(var i=0; i<this.state.buy.length;i++){
      push=false;
   }
 }
-
 }
 if(push){
   this.state.buy.push(data1)
 }
       localStorage.setItem("names", JSON.stringify(this.state.buy));
-
-      var storedNames = JSON.parse(localStorage.getItem("names"));
-      console.log(storedNames);
     }
     componentDidMount(){
-    
+   if (JSON.parse(localStorage.getItem("names"))!==null){
+     this.setState({buy: JSON.parse(localStorage.getItem("names"))})
+   }
+  //  console.log(this.shop)
     }
   render() {
    
@@ -89,8 +88,8 @@ if(push){
           </div>
 
         <div className='Новинки_cards'>
-      {this.state.data.map(item=>{ 
-        return <div className='Новинки_card'>
+      {this.state.data.map((item, key)=>{ 
+        if(key<4){return <div className='Новинки_card'>
             <img src={item.Image} alt='' className='card_imgg'/>
             <p className='card_names'>{item.name}</p>
             <p className='prices'>{item.price}</p>
@@ -100,7 +99,7 @@ if(push){
                 <button className='btnn'><TbShoppingCartPlus/></button>
               </div>
             </div>
-          </div>})} 
+          </div>}})} 
         </div>
         </div>
         <div className='Скидки'>
@@ -114,54 +113,20 @@ if(push){
           </ div>
         </div>
         <div className='Скидки_cards'>
-          <div className='Скидки_card'>
-            <img src={card_img} alt='' className='card_imgg'/>
-            <p className='card_discounts'>12%</p>
-            <p className='card_names'>Cовместимость со вспышками — AD200/AD200Pro</p>
-            <p className='prices'>62 392,23 Сум</p>
-            <div className='card_footer'>
-              <Select placeholder='1шт.' className='card_amounts' options={options} />
-              <div className='card_btnn'>
-                <button className='btnn'><TbShoppingCartPlus/></button>
+            {this.state.data.map((item,key) => {
+               if(key<4){ return <div className='Новинки_card'>
+                <img src={item.Image} alt='' className='card_imgg' />
+                <p className='card_names'>{item.name}</p>
+                <p className='prices'>{item.price}</p>
+                <div className='card_footer'>
+                  <Select placeholder='1шт.' className='card_amounts' options={options} />
+                  <div className='card_btnn' onClick={() => this.shop(item.name, item.Image, item.price, item.skidka)}>
+                    <button className='btnn'><TbShoppingCartPlus /></button>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div className='Скидки_card'>
-            <img src={card_img} alt='' className='card_imgg'/>
-            <p className='card_discounts'>12%</p>
-            <p className='card_names'>Cовместимость со вспышками — AD200/AD200Pro</p>
-            <p className='prices'>62 392,23 Сум</p>
-            <div className='card_footer'>
-              <Select placeholder='1шт.' className='card_amounts' options={options} />
-              <div className='card_btnn'>
-                <button className='btnn'><TbShoppingCartPlus/></button>
-              </div>
-            </div>
-          </div>
-          <div className='Скидки_card'>
-            <img src={card_img} alt='' className='card_imgg'/>
-            <p className='card_discounts'>12%</p>
-            <p className='card_names'>Cовместимость со вспышками — AD200/AD200Pro</p>
-            <p className='prices'>62 392,23 Сум</p>
-            <div className='card_footer'>
-              <Select placeholder='1шт.' className='card_amounts' options={options} />
-              <div className='card_btnn'>
-                <button className='btnn'><TbShoppingCartPlus/></button>
-              </div>
-            </div>
-          </div>
-          <div className='Скидки_card'>
-            <img src={card_img} alt='' className='card_imgg'/>
-            <p className='card_discounts'>12%</p>
-            <p className='card_names'>Cовместимость со вспышками — AD200/AD200Pro</p>
-            <p className='prices'>62 392,23 Сум</p>
-            <div className='card_footer'>
-              <Select placeholder='1шт.' className='card_amounts' options={options} />
-              <div className='card_btnn'>
-                <button className='btnn'><TbShoppingCartPlus/></button>
-              </div>
-            </div>
-          </div>
+            }})}  
+
         </div>
         </div>
         <div className='famous'>
@@ -220,7 +185,9 @@ if(push){
           </div>
 
         <div className='xit_cards'>
-          <div className='xit_card'>
+          
+          {this.state.data.map((item,key)=>{
+            if(key<4){return <div className='xit_card'>
             <img src={card_img} alt='' className='card_imgg'/>
             <p className='card_xit'>Хит</p>
             <p className='card_names_x'>Cовместимость со вспышками — AD200/AD200Pro</p>
@@ -231,43 +198,10 @@ if(push){
                 <button className='btnn'><TbShoppingCartPlus/></button>
               </div>
             </div>
-          </div>
-          <div className='xit_card'>
-            <img src={card_img} alt='' className='card_imgg'/>
-            <p className='card_xit'>Хит</p>
-            <p className='card_names_x'>Cовместимость со вспышками — AD200/AD200Pro</p>
-            <p className='prices'>62 392,23 Сум</p>
-            <div className='card_footer'>
-              <Select placeholder='1шт.' className='card_amounts' options={options} />
-              <div className='card_btnn'>
-                <button className='btnn'><TbShoppingCartPlus/></button>
-              </div>
             </div>
-          </div>
-          <div className='xit_card'>
-            <img src={card_img} alt='' className='card_imgg'/>
-            <p className='card_xit'>Хит</p>
-            <p className='card_names_x'>Cовместимость со вспышками — AD200/AD200Pro</p>
-            <p className='prices'>62 392,23 Сум</p>
-            <div className='card_footer'>
-              <Select placeholder='1шт.' className='card_amounts' options={options} />
-              <div className='card_btnn'>
-                <button className='btnn'><TbShoppingCartPlus/></button>
-              </div>
-            </div>
-          </div>
-          <div className='xit_card'>
-            <img src={card_img} alt='' className='card_imgg'/>
-            <p className='card_xit'>Хит</p>
-            <p className='card_names_x'>Cовместимость со вспышками — AD200/AD200Pro</p>
-            <p className='prices'>62 392,23 Сум</p>
-            <div className='card_footer'>
-              <Select placeholder='1шт.' className='card_amounts' options={options} />
-              <div className='card_btnn'>
-                <button className='btnn'><TbShoppingCartPlus/></button>
-              </div>
-            </div>
-          </div>
+            
+            }
+          })}
         </div>
         </div>
 
