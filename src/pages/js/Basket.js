@@ -67,12 +67,23 @@ this.state.buy.splice(key,1)
           <div className='order_main'>
             <div className='order_main_l'>
             <div className='main_l_header'>
+              <div className='header_t'>
                 <p>PRODUCT DETAILS</p>
+              <div className='main_header_text'>
+                <p>AMOUNT</p>
+                <p>PRICE</p>
+                <p>TOTAL</p>
+              </div>
+              </div>
+
                 {this.state.buy.map((item,key)=>{
                 return <div className='ordered'>
                   <div className='ordered_img'>
-                    <img src={ordered} alt=''/>
-                    <p>{item.name}</p>
+                    <div className='ordered_i'>
+                      <img src={ordered} alt=''/>
+                      <p>x</p>
+                    </div>
+                    <p className='product_name'>{item.name}</p>
                   <div className='amount_btn' style={{color: '#359740'}}>              
                     <span onClick={()=> this.plus(key)}><AiOutlinePlusCircle /></span>
                       <p>{item.count}</p>
@@ -121,7 +132,7 @@ this.state.buy.splice(key,1)
                     <p>Итого</p>
                     <p>62 392,23 Сум</p>
                 </div>
-                <a href='/Inform'>
+                <a className='order_btn_a' href='/Inform'>
                   <button className='order_btn'>Продолжать</button>
                 </a>
             </div>

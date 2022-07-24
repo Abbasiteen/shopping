@@ -167,10 +167,10 @@ export default class Footer extends Component {
         </footer>
 
         <div className='footer_menu'>
-          <span><BiHomeAlt/>Главная</span>
-          <span><TbLayoutGrid/>Главная</span>
-          <span><RiShoppingCartLine/>Главная</span>
-          <span><CgMenuLeft/>Главная</span>
+          <a href='/'><span><BiHomeAlt/>Главная</span></a>
+          <a href='/'><span><TbLayoutGrid/>Каталог</span></a>
+          <a href='/Ordered'><span><RiShoppingCartLine/>Карзина</span></a>
+          <a href='/'><span><CgMenuLeft/>Меню</span></a>
         </div>
       </div>
     )

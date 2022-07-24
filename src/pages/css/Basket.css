@@ -13,6 +13,18 @@
   justify-content: space-between;
   text-decoration: none;
 }
+.header_t{
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main_header_text{
+  width: 20vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 .basket_title_t{
   margin-top: 7%;
   font-weight: bold;
@@ -30,7 +42,7 @@
   color: #70737C;
 }
 .order_main{
-  width: 70vw;
+  width: 90vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -54,8 +66,25 @@
   align-items: center;
   justify-content: space-between;
 }
-.ordered_img p{
+.product_name{
   text-align: left;
+  width: 15vw;
+}
+.ordered_i{
+  position: relative;
+}
+.ordered_i p{
+  position: absolute;
+  left: -4px;
+  top: -4px;
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #E55C5C;
+  color: #fff;
+  border-radius: 20px;
 }
 .ordered{
   line-height: 30px;
@@ -72,8 +101,8 @@
 /* .amount_btn{
   line-height: 30px;
 } */
-.inform_card{
-  width: 20vw;
+.order_card{
+    width: 20vw;
 }
 .order_text{
   /* width: 90%; */
@@ -95,10 +124,19 @@
 .order_btn {
   width: 328px;
   height: 51px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: #359740;
   border-radius: 8px;
   border: none;
   color: #fff;
+}
+.order_btn_a{
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .amount_btn {
   width: 5vw;
