@@ -7,15 +7,28 @@ export default class Error extends Component {
   state={
     buy:[],
     totalprice:[],
-    totalcount:[]
+    totalcount:0,
+    totals:0
   }
   plus=(key)=>{
     this.state.buy[key].count++;
     this.setState({})
     localStorage.setItem("names", JSON.stringify(this.state.buy));
         this.totalprice()
+        this.totalcount()
+
 
   }
+    delete = (key) => {
+        this.state.buy.splice(key, 1)
+      this.setState({})
+      localStorage.setItem("names", JSON.stringify(this.state.buy));
+      this.totalprice()
+        this.totalcount()
+        this.totalSkidka()
+
+
+    }
   minus=(key)=>{
     this.state.buy[key].count--;
     if(this.state.buy[key].count<=0){
@@ -24,13 +37,26 @@ this.state.buy.splice(key,1)
     this.setState({})
     localStorage.setItem("names", JSON.stringify(this.state.buy));
         this.totalprice()
+        this.totalcount()
+        this.totalSkidka()
+
+
     }
   totalprice=()=>{
     var a= 0
     for (let i = 0; i < this.state.buy.length; i++) {
       a=a+this.state.buy[i].price*this.state.buy[i].count
     }
-    this.setState({totalprice:a})
+    this.setState({totalprice:a.toFixed(2)})
+  }
+  totalSkidka=()=>{
+     var a = 0
+     for (let i = 0; i < this.state.buy.length; i++) {
+       a = a + (this.state.buy[i].price * this.state.buy[i].count*this.state.buy[i].skidka)/100
+     }
+     this.setState({
+       totals: a.toFixed(2)
+     })
   }
 
    totalcount = () => {
@@ -38,7 +64,7 @@ this.state.buy.splice(key,1)
      for (let i = 0; i < this.state.buy.length; i++) {
        b = b + this.state.buy[i].count
      }
-     this.setState({totalcount:b.toFixed})
+     this.setState({totalcount:b})
    }
 
     componentDidMount() {
@@ -47,9 +73,13 @@ this.state.buy.splice(key,1)
           buy: JSON.parse(localStorage.getItem("names"))
         })
       }
+     
+      
       setTimeout(() => {
         console.log(this.state.buy);
         this.totalprice()
+        this.totalcount()
+        this.totalSkidka()
       }, 100);
     }
   render() {
@@ -81,7 +111,7 @@ this.state.buy.splice(key,1)
                   <div className='ordered_img'>
                     <div className='ordered_i'>
                       <img src={ordered} alt=''/>
-                      <p>x</p>
+                      <p onClick={()=>{this.delete(key)}}>x</p>
                     </div>
                     <p className='product_name'>{item.name}</p>
                   <div className='amount_btn' style={{color: '#359740'}}>              
@@ -93,7 +123,7 @@ this.state.buy.splice(key,1)
                       <p>{item.price.toFixed(2)}</p>
                   </div>
                   <div className='ordered_amount'>
-                      <p>{item.price*item.count.toFixed(2)}</p>
+                      <p>{(item.price*item.count).toFixed(2)}</p>
                   </div>
                    </div>
                 </div>
@@ -123,14 +153,14 @@ this.state.buy.splice(key,1)
                     <p>Общая сумма:</p>
                 </div>
                 <div className='card_2'>
-                    <p>40 418 474.34 сум</p>
-                    <p>-14 145 394 сум</p>
-                    <p>26 273 080.34 сум</p>
+                    <p>{this.state.totalprice} сум</p>
+                    <p>-{this.state.totals} сум</p>
+                    <p>{(this.state.totalprice-this.state.totals).toFixed(2)} сум</p>
                 </div>
                 </div>
                 <div className='order_c_end1'>
                     <p>Итого</p>
-                    <p>62 392,23 Сум</p>
+                    <p>{(this.state.totalprice-this.state.totals).toFixed(2)} Сум</p>
                 </div>
                 <a className='order_btn_a' href='/Inform'>
                   <button className='order_btn'>Продолжать</button>

@@ -2,6 +2,55 @@ import React, { Component } from 'react'
 import { TiArrowLeftThick } from 'react-icons/ti'
 import '../css/Inform.css'
 export default class Footer extends Component {
+  state = {
+      buy: [],
+      totalprice: [],
+      totalcount: 0,
+      totals: 0
+  }
+ totalprice = () => {
+     var a = 0
+     for (let i = 0; i < this.state.buy.length; i++) {
+         a = a + this.state.buy[i].price * this.state.buy[i].count
+     }
+     this.setState({
+         totalprice: a.toFixed(2)
+     })
+ }
+ totalSkidka = () => {
+     var a = 0
+     for (let i = 0; i < this.state.buy.length; i++) {
+         a = a + (this.state.buy[i].price * this.state.buy[i].count * this.state.buy[i].skidka) / 100
+     }
+     this.setState({
+         totals: a.toFixed(2)
+     })
+ }
+
+ totalcount = () => {
+     var b = 0
+     for (let i = 0; i < this.state.buy.length; i++) {
+         b = b + this.state.buy[i].count
+     }
+     this.setState({
+         totalcount: b
+     })
+ }
+    componentDidMount() {
+      if (JSON.parse(localStorage.getItem("names")) !== null) {
+        this.setState({
+          buy: JSON.parse(localStorage.getItem("names"))
+        })
+      }
+     
+      
+      setTimeout(() => {
+        console.log(this.state.buy);
+        this.totalprice()
+        this.totalcount()
+        this.totalSkidka()
+      }, 100);
+    }
   render() {
     return (
       <div>
@@ -36,14 +85,14 @@ export default class Footer extends Component {
                 <h1 className='card_t'>Итого:</h1>
                 <div className='card_texts'>
                 <div className='card_1'>
-                    <p>Товары, 4 шт.</p>
+                    <p>Товары,  {this.state.totalcount} шт.</p>
                     <p>Скидка</p>
                     <p>Общая сумма:</p>
                 </div>
                 <div className='card_2'>
-                    <p>40 418 474.34 сум</p>
-                    <p>-14 145 394 сум</p>
-                    <p>26 273 080.34 сум</p>
+                    <p>{this.state.totalprice}</p>
+                    <p>-{this.state.totals} сум</p>
+                    <p>{(this.state.totalprice-this.state.totals).toFixed(2)} сум</p>
                 </div>
                 </div>
                 <div className='card_end1'>

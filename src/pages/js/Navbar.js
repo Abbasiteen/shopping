@@ -7,7 +7,7 @@ import { AiOutlineShoppingCart } from 'react-icons/ai';
 import logo from '../img/logo.png'
 import '../css/Navbar.css'
 export default class Navbar extends Component {
- 
+
   render() {
      const openModal=()=> {
       document.querySelector(".modal1").classList.toggle("open_modal");
@@ -32,7 +32,7 @@ export default class Navbar extends Component {
       <p>Каталог</p>
     </div>
     <div className='inputs'>
-      <input className='header_inputs' placeholder='Что желаете найти?'/>
+      <input className='header_inputs' onKeyUp={this.search} placeholder='Что желаете найти?'/>
       <span className='FiSearch'><FiSearch/></span> 
     </div>
     <a href='/Ordered'>
@@ -66,7 +66,7 @@ export default class Navbar extends Component {
       </select>
       </div>
 </div>
-      
+
       <div className='modal1'>
          <ul>
           <li><a href='/'>Main</a></li>
@@ -76,6 +76,7 @@ export default class Navbar extends Component {
           <li><a href='/products'>products</a></li>
          </ul>
       </div>
+
 
       </div>
 
