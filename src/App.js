@@ -9,10 +9,10 @@ import Inform from './pages/js/Inform'
 import Home from './pages/js/Home'
 import Discount from './pages/js/Discount'
 import New from './pages/js/News'
-import Xit from './pages/js/Xit';
-import './App.css'
+import Xit from './pages/js/Xit'
 import Products from './pages/js/Products'
 import Ordered from './pages/js/Basket'
+import './App.css'
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 export default class App extends Component {
   render() {
