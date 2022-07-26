@@ -238,9 +238,9 @@ background-color: #FF6875;
 .footer_menu{
     /* width: 94vw; */
     padding: 34px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
     height: 72px;
     font-size: 20px;
     background-color: #F5F8FA;
@@ -249,9 +249,11 @@ background-color: #FF6875;
     /* position: fixed; */
     /* z-index: 9999; */
 }
-.footer_menu span{
-    /* width: 20%; */
-    text-align: center;
+.footer_menu a{
+    /* width: 10vw !important; */
+    text-align: center !important;
+    text-decoration: none !important;
+    color: #26211E;
 }
 
 @media(min-width:1100px){
@@ -290,12 +292,15 @@ background-color: #FF6875;
 }
 @media(min-width:800px){
     .footer_menu{
-        display: none;
+        display: none !important;
     }
 }
 @media(max-width:800px){
     .footer_menu{
-        display: block;
+        display: block !important;
+    }
+    .footer_menu a{
+        width: 7vw;
     }
 }
 @media(max-width:500px){

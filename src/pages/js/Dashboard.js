@@ -188,13 +188,13 @@ if(push){
           
           {this.state.data.map((item,key)=>{
             if(key<4){return <div className='xit_card'>
-            <img src={card_img} alt='' className='card_imgg'/>
+            <img src={item.Image} alt='' className='card_imgg'/>
             <p className='card_xit'>Хит</p>
-            <p className='card_names_x'>Cовместимость со вспышками — AD200/AD200Pro</p>
-            <p className='prices'>62 392,23 Сум</p>
+            <p className='card_names_x'>{item.name}</p>
+            <p className='prices'>{item.price}</p>
             <div className='card_footer'>
               <Select placeholder='1шт.' className='card_amounts' options={options} />
-              <div className='card_btnn'>
+              <div className='card_btnn' onClick={() => this.shop(item.name, item.Image, item.price, item.skidka)}>
                 <button className='btnn'><TbShoppingCartPlus/></button>
               </div>
             </div>
