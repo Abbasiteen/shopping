@@ -14,13 +14,13 @@
   text-decoration: none;
 }
 .header_t{
-  width: 95%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 .main_header_text{
-  width: 20vw;
+  width: 375px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -72,8 +72,11 @@
 }
 .ordered_i{
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.ordered_i p{
+.ordered_delate{
   position: absolute;
   left: -4px;
   top: -4px;

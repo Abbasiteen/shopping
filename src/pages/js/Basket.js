@@ -111,9 +111,9 @@ this.state.buy.splice(key,1)
                   <div className='ordered_img'>
                     <div className='ordered_i'>
                       <img src={ordered} alt=''/>
-                      <p onClick={()=>{this.delete(key)}}>x</p>
+                      <p className='ordered_delate' onClick={()=>{this.delete(key)}}>x</p>
+                      <p className='product_name'>{item.name}</p>
                     </div>
-                    <p className='product_name'>{item.name}</p>
                   <div className='amount_btn' style={{color: '#359740'}}>              
                     <span onClick={()=> this.plus(key)}><AiOutlinePlusCircle /></span>
                       <p>{item.count}</p>

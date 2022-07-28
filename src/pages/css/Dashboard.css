@@ -90,6 +90,15 @@
     color: #fff;
     font-size: 2em;
 }
+.btnn:active {
+    color: red;
+  }
+  .btnn:focus {
+    background-color: #ff3d4d;
+  }
+  .btnn:target {
+    color: rgb(89, 0, 255);
+  }
 .css-1s2u09g-control {
     width: 101px;
     height: 41px;
