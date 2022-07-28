@@ -236,18 +236,23 @@ background-color: #FF6875;
 /* menu */
 
 .footer_menu{
-    /* width: 94vw; */
+    width: 100vw;
     padding: 34px;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: space-between !important;
+    display: flex ;
+    align-items: center ;
+    justify-content: space-between ;
     height: 72px;
     font-size: 20px;
     background-color: #F5F8FA;
     border: 2px solid #E4E4E4;
     /* position: absolute; */
-    /* position: fixed; */
+    position: fixed;
+    bottom: 0;
     /* z-index: 9999; */
+}
+.footer_menu span{
+    width: 7vw;
+    text-align: center;
 }
 .footer_menu a{
     /* width: 10vw !important; */

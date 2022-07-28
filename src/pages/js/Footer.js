@@ -15,11 +15,12 @@ import { TbLayoutGrid } from 'react-icons/tb'
 import { RiShoppingCartLine } from 'react-icons/ri'
 import { CgMenuLeft } from 'react-icons/cg'
 import '../css/Footer.css'
-export default class Footer extends Component {
-  render() {
     const openModal=()=> {
       document.querySelector(".modal1").classList.toggle("open_modal");
     }
+export default class Footer extends Component {
+  render() {
+
     return (
       <div>
       
@@ -172,10 +173,19 @@ export default class Footer extends Component {
         <div className='footer_menu'>
           <a href='/'><span><BiHomeAlt/>Главная</span></a>
           {/* <div onClick={openModal}><span><TbLayoutGrid/>Каталог</span></div> */}
-          <a href='#!'><span onClick={openModal}><TbLayoutGrid/>Каталог</span></a>
+          <a href='#!' onClick={openModal}><span><TbLayoutGrid/>Каталог</span></a>
           <a href='/Ordered'><span><RiShoppingCartLine/>Карзина</span></a>
           <a href='/'><span><CgMenuLeft/>Меню</span></a>
         </div>
+        <div className='modal1'>
+         <ul>
+          <li><a href='/'>Main</a></li>
+          <li><a href='/Contact'>Contact</a></li>
+          <li><a href='/About'>About</a></li>
+          <li><a href='/Inform'>Inform</a></li>
+          <li><a href='/products'>products</a></li>
+         </ul>
+      </div>
       </div>
     )
   }

@@ -29,6 +29,9 @@ const options = [
   { value: '2 шт.', label: '2 шт.' },
   { value: '3 шт.', label: '3 шт.' }
 ]
+const openModal=()=> {
+  document.querySelector(".modal1").classList.toggle("open_modal");
+}
 const cards = require("./pages/js/json")
 export default class App extends Component {
    state = {
@@ -47,9 +50,7 @@ export default class App extends Component {
      }
    }
   render() {
-    const openModal=()=> {
-      document.querySelector(".modal1").classList.toggle("open_modal");
-    }
+   
     return (
       <div> 
 <div className='navbars'>
@@ -65,8 +66,8 @@ export default class App extends Component {
     <div className='logo'>
       <img src={logo} alt=""className='logo-img'/>
     </div>
-    <div className='katalog' onClick={openModal} >
-      <span className='menu'><RiMenu4Line  /></span>
+    <div className='katalog'>
+      <span onClick={openModal} className='menu'><RiMenu4Line  /></span>
       <p>Каталог</p>
     </div>
     <div className='inputs'>
@@ -104,6 +105,16 @@ export default class App extends Component {
       </select>
       </div>
 </div>
+
+      <div className='modal1'>
+         <ul>
+          <li><a href='/'>Main</a></li>
+          <li><a href='/Contact'>Contact</a></li>
+          <li><a href='/About'>About</a></li>
+          <li><a href='/Inform'>Inform</a></li>
+          <li><a href='/products'>products</a></li>
+         </ul>
+      </div>
 
       {this.state.show?(
         <Router>
@@ -145,6 +156,7 @@ export default class App extends Component {
         }</div>
       
       )}
+
         <Footer/>
       </div>
     )
