@@ -17,6 +17,9 @@ import { CgMenuLeft } from 'react-icons/cg'
 import '../css/Footer.css'
 export default class Footer extends Component {
   render() {
+    const openModal=()=> {
+      document.querySelector(".modal1").classList.toggle("open_modal");
+    }
     return (
       <div>
       
@@ -168,7 +171,8 @@ export default class Footer extends Component {
 
         <div className='footer_menu'>
           <a href='/'><span><BiHomeAlt/>Главная</span></a>
-          <a href='/'><span><TbLayoutGrid/>Каталог</span></a>
+          {/* <div onClick={openModal}><span><TbLayoutGrid/>Каталог</span></div> */}
+          <a href='#!'><span onClick={openModal}><TbLayoutGrid/>Каталог</span></a>
           <a href='/Ordered'><span><RiShoppingCartLine/>Карзина</span></a>
           <a href='/'><span><CgMenuLeft/>Меню</span></a>
         </div>

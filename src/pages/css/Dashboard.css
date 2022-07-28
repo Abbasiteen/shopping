@@ -93,7 +93,7 @@
 .css-1s2u09g-control {
     width: 101px;
     height: 41px;
-    border-radius: 30px;
+    border-radius: 30px !important;
 }
 .css-6j8wv5-Input{
     height: 0;

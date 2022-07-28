@@ -90,7 +90,8 @@ if(push){
         <div className='Новинки_cards'>
       {this.state.data.map((item, key)=>{ 
         if(key<4){return <div className='Новинки_card'>
-            <img src={item.Image} alt='' className='card_imgg'/>
+            <img src={card_img} alt='' className='card_imgg' />    
+            {/* <img src={item.Image} alt='' className='card_imgg'/> */}
             <p className='card_names'>{item.name}</p>
             <p className='prices'>{item.price}</p>
             <div className='card_footer'>
@@ -115,7 +116,8 @@ if(push){
         <div className='Скидки_cards'>
             {this.state.data.map((item,key) => {
                if(key<4){ return <div className='Новинки_card'>
-                <img src={item.Image} alt='' className='card_imgg' />
+                <img src={card_img} alt='' className='card_imgg' />
+                {/* <img src={item.Image} alt='' className='card_imgg' /> */}
                 <p className='card_names'>{item.name}</p>
                 <p className='prices'>{item.price}</p>
                 <div className='card_footer'>
@@ -188,7 +190,8 @@ if(push){
           
           {this.state.data.map((item,key)=>{
             if(key<4){return <div className='xit_card'>
-            <img src={item.Image} alt='' className='card_imgg'/>
+            <img src={card_img} alt='' className='card_imgg' />
+            {/* <img src={item.Image} alt='' className='card_imgg'/> */}
             <p className='card_xit'>Хит</p>
             <p className='card_names_x'>{item.name}</p>
             <p className='prices'>{item.price}</p>

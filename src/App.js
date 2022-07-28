@@ -18,8 +18,17 @@ import { RiMenu4Line } from 'react-icons/ri'
 import { FiSearch } from 'react-icons/fi'
 import { AiOutlineShoppingCart } from 'react-icons/ai';
 import logo from './pages/img/logo.png'
+import card_img from '../src/pages/img/camera.png'
+import { TbShoppingCartPlus } from 'react-icons/tb'
+import Select from 'react-select';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import '../src/pages/css/Dashboard.css'
 import './App.css'
+const options = [
+  { value: '1 шт.', label: '1шт.' },
+  { value: '2 шт.', label: '2 шт.' },
+  { value: '3 шт.', label: '3 шт.' }
+]
 const cards = require("./pages/js/json")
 export default class App extends Component {
    state = {
@@ -113,7 +122,24 @@ export default class App extends Component {
         </Router>):(
         <div>{ this.state.cards.map((item,key)=>{
           if (item.name.includes(document.querySelector('.header_inputs').value)) {
-            return <div>cards</div>
+            return <div>
+              <div className='xit_cards' style={{display: 'flex'}}>
+              <div className='xit_card'>
+            <img src={card_img} alt='' className='card_imgg' />
+            {/* <img src={item.Image} alt='' className='card_imgg'/> */}
+            <p className='card_xit'>Хит</p>
+            <p className='card_names_x'>{item.name}</p>
+            <p className='prices'>{item.price}</p>
+            <div className='card_footer'>
+              <Select placeholder='1шт.' className='card_amounts' options={options} />
+              <div className='card_btnn' onClick={() => this.shop(item.name, item.Image, item.price, item.skidka)}>
+                <button className='btnn'><TbShoppingCartPlus/></button>
+              </div>
+            </div>
+            </div>
+            </div>
+            </div>
+          
           }
         })
         }</div>

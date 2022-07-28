@@ -255,7 +255,19 @@ background-color: #FF6875;
     text-decoration: none !important;
     color: #26211E;
 }
-
+.modal1{
+    width: 200px;
+    height: 400px;
+    background-color: rgba(129, 129, 129, 0.553);
+    display: none;
+    margin-top: 100px;
+    margin-left: 25%;
+    position: absolute;
+    z-index: 99;
+}
+.open_modal{
+    display: block;
+}
 @media(min-width:1100px){
     .main_f{
         display: block;
