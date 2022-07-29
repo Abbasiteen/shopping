@@ -5,6 +5,7 @@ import card_img from '../img/camera.png'
 import carousel from '../img/carousel.png'
 import camer from '../img/camer.png'
 import Select from 'react-select';
+import Form from 'react-bootstrap/Form';
 
 import '../css/Dashboard.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -95,7 +96,11 @@ if(push){
             <p className='card_names'>{item.name}</p>
             <p className='prices'>{item.price}</p>
             <div className='card_footer'>
-              <Select placeholder='1шт.' className='card_amounts' options={options} />
+            <Form.Select className="card_select">
+              <option value="1">1шт</option>
+              <option value="2">2шт</option>
+              <option value="3">3шт</option>
+            </Form.Select>
               <div className='card_btnn' onClick={()=>this.shop(item.name,item.Image,item.price,item.skidka)}>
                 <button className='btnn'><TbShoppingCartPlus/></button>
               </div>
@@ -115,17 +120,21 @@ if(push){
         </div>
         <div className='Скидки_cards'>
             {this.state.data.map((item,key) => {
-               if(key<4){ return <div className='Новинки_card'>
+               if(key<4){ return <div className='Скидки_card'>
                 <img src={card_img} alt='' className='card_imgg' />
                 {/* <img src={item.Image} alt='' className='card_imgg' /> */}
                 <p className='card_names'>{item.name}</p>
                 <p className='prices'>{item.price}</p>
                 <div className='card_footer'>
-                  <Select placeholder='1шт.' className='card_amounts' options={options} />
-                  <div className='card_btnn' onClick={() => this.shop(item.name, item.Image, item.price, item.skidka)}>
-                    <button className='btnn'><TbShoppingCartPlus /></button>
-                  </div>
-                </div>
+            <Form.Select className="card_select">
+              <option value="1">1шт</option>
+              <option value="2">2шт</option>
+              <option value="3">3шт</option>
+            </Form.Select>
+              <div className='card_btnn' onClick={()=>this.shop(item.name,item.Image,item.price,item.skidka)}>
+                <button className='btnn'><TbShoppingCartPlus/></button>
+              </div>
+            </div>
               </div>
             }})}  
 
@@ -135,43 +144,63 @@ if(push){
           <p className='famous_title'>Популярные категории</p>
           <div className='famous_cards'>
             <div className='camer_card'>
-              <img src={camer} alt='' className='camer'/>
+              <div className='camer_card_img'>
+                <img src={camer} alt='' className='camer'/>
+              </div>
               <p className='camer_text'>Фотоаппараты</p>
             </div>
             <div className='camer_card'>
-              <img src={camer} alt='' className='camer'/>
+              <div className='camer_card_img'>
+                <img src={camer} alt='' className='camer'/>
+              </div>
               <p className='camer_text'>Фотоаппараты</p>
             </div>
             <div className='camer_card'>
-              <img src={camer} alt='' className='camer'/>
+              <div className='camer_card_img'>
+                <img src={camer} alt='' className='camer'/>
+              </div>
               <p className='camer_text'>Фотоаппараты</p>
             </div>
             <div className='camer_card'>
-              <img src={camer} alt='' className='camer'/>
+              <div className='camer_card_img'>
+                <img src={camer} alt='' className='camer'/>
+              </div>
               <p className='camer_text'>Фотоаппараты</p>
             </div>
             <div className='camer_card'>
-              <img src={camer} alt='' className='camer'/>
+              <div className='camer_card_img'>
+                <img src={camer} alt='' className='camer'/>
+              </div>
               <p className='camer_text'>Фотоаппараты</p>
             </div>
             <div className='camer_card'>
-              <img src={camer} alt='' className='camer'/>
+              <div className='camer_card_img'>
+                <img src={camer} alt='' className='camer'/>
+              </div>
               <p className='camer_text'>Фотоаппараты</p>
             </div>
             <div className='camer_card'>
-              <img src={camer} alt='' className='camer'/>
+              <div className='camer_card_img'>
+                <img src={camer} alt='' className='camer'/>
+              </div>
               <p className='camer_text'>Фотоаппараты</p>
             </div>
             <div className='camer_card'>
-              <img src={camer} alt='' className='camer'/>
+              <div className='camer_card_img'>
+                <img src={camer} alt='' className='camer'/>
+              </div>
               <p className='camer_text'>Фотоаппараты</p>
             </div>
             <div className='camer_card'>
-              <img src={camer} alt='' className='camer'/>
+              <div className='camer_card_img'>
+                <img src={camer} alt='' className='camer'/>
+              </div>
               <p className='camer_text'>Фотоаппараты</p>
             </div>
             <div className='camer_card'>
-              <img src={camer} alt='' className='camer'/>
+              <div className='camer_card_img'>
+                <img src={camer} alt='' className='camer'/>
+              </div>
               <p className='camer_text'>Фотоаппараты</p>
             </div>
           </div>
@@ -193,11 +222,15 @@ if(push){
             <img src={card_img} alt='' className='card_imgg' />
             {/* <img src={item.Image} alt='' className='card_imgg'/> */}
             <p className='card_xit'>Хит</p>
-            <p className='card_names_x'>{item.name}</p>
+            <p className='card_names'>{item.name}</p>
             <p className='prices'>{item.price}</p>
             <div className='card_footer'>
-              <Select placeholder='1шт.' className='card_amounts' options={options} />
-              <div className='card_btnn' onClick={() => this.shop(item.name, item.Image, item.price, item.skidka)}>
+            <Form.Select className="card_select">
+              <option value="1">1шт</option>
+              <option value="2">2шт</option>
+              <option value="3">3шт</option>
+            </Form.Select>
+              <div className='card_btnn' onClick={()=>this.shop(item.name,item.Image,item.price,item.skidka)}>
                 <button className='btnn'><TbShoppingCartPlus/></button>
               </div>
             </div>

@@ -171,11 +171,10 @@ export default class Footer extends Component {
         </footer>
 
         <div className='footer_menu'>
-          <a href='/'><span><BiHomeAlt/>Главная</span></a>
-          {/* <div onClick={openModal}><span><TbLayoutGrid/>Каталог</span></div> */}
-          <a href='#!' onClick={openModal}><span><TbLayoutGrid/>Каталог</span></a>
-          <a href='/Ordered'><span><RiShoppingCartLine/>Карзина</span></a>
-          <a href='/'><span><CgMenuLeft/>Меню</span></a>
+          <a href='/'><BiHomeAlt/>Главная</a>
+          <a href='/' onClick={openModal}><TbLayoutGrid/>Каталог</a>
+          <a href='/Ordered'><RiShoppingCartLine/>Карзина</a>
+          <a href='/'><CgMenuLeft/>Меню</a>
         </div>
         <div className='modal1'>
          <ul>
