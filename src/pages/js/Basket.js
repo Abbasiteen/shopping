@@ -105,7 +105,7 @@ this.state.buy.splice(key,1)
                 <p>TOTAL</p>
               </div>
               </div>
-
+              <div className='ordered_main_card'>
                 {this.state.buy.map((item,key)=>{
                 return <div className='ordered'>
                   <div className='ordered_img'>
@@ -115,7 +115,8 @@ this.state.buy.splice(key,1)
                         <p className='product_name'>{item.name}</p>
                       
                     </div>
-                  <div className='amount_btn' style={{color: '#359740'}}>              
+                    <div className='order_amount_text'>
+                      <div className='amount_btn' style={{color: '#359740'}}>
                     <span onClick={()=> this.plus(key)}><AiOutlinePlusCircle /></span>
                       <p>{item.count}</p>
                     <span onClick={()=> this.minus(key)} > < AiOutlineMinusCircle/> </span>
@@ -126,16 +127,10 @@ this.state.buy.splice(key,1)
                   <div className='ordered_amount'>
                       <p>{(item.price*item.count).toFixed(2)}</p>
                   </div>
+                    </div>
+
                    </div>
                 </div>
-                  
-                
-
-                
-
-            
-
-         
                 })}
 
            </div>
@@ -168,7 +163,7 @@ this.state.buy.splice(key,1)
                 </a>
             </div>
           </div>
-
+        </div>
     </div>
     </div>
       <div/>
