@@ -14,7 +14,15 @@ import {BiHomeAlt} from 'react-icons/bi'
 import { TbLayoutGrid } from 'react-icons/tb'
 import { RiShoppingCartLine } from 'react-icons/ri'
 import { CgMenuLeft } from 'react-icons/cg'
+// import { BsTelephoneFill, BsInstagram, BsTwitter } from "react-icons/bs"
+// import { FaFacebookF } from "react-icons/fa"
+// import app from "../img/XMLID_228_.png"
+// import sam from "../img/samsung.png"
+// import hua from "../img/huave.png"
+// import mi from "../img/mi.png"
+// import img from "../img/footer.png"
 import '../css/Footer.css'
+// import { padding } from '@mui/system'
     const openModal=()=> {
       document.querySelector(".modal1").classList.toggle("open_modal");
     }
@@ -24,9 +32,29 @@ export default class Footer extends Component {
     return (
       <div>
       
-        
-        <div className='brend'>
-          <h1 className='brend_t'>Популярные бренды</h1>
+        <section className='brends'>
+          <h1 className='brends_title'>Популярные бренды</h1>
+
+          <div className='brends_box'>
+            <div className='brend_app'>
+              <img src={apple} alt />
+            </div>
+            <div className='brend_sam'>
+              <img src={samsung} alt />
+            </div>
+            <div className='brend_hua'>
+              <img src={huawe} alt />
+            </div>
+            <div className='brend_artel'>
+              <h6 className='brend_artel_text'>artel</h6>
+            </div>
+            <div className='brend_mi'>
+              <img src={mi} alt />
+            </div>
+          </div>
+        </section>     
+        {/* <div className='brend'>
+          <h1 className='brend_t'></h1>
           <div className='companylogo'>
           <div className='asas'>
           <img src={apple} alt='' id="ss" />
@@ -44,7 +72,7 @@ export default class Footer extends Component {
                 <img src={mi} alt='' id='ss' />
             </div> 
 </div>
- </div>
+ </div> */}
         <footer className='main_f'>
           <div className='footer'>
             <div className='footer_links'>

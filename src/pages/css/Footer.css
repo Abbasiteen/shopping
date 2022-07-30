@@ -1,37 +1,74 @@
-.brend{
-    margin: 5% auto;
+.brends {
+    width: 100%;
+    padding: 0 10%;
+    margin-top: 50px;
+
 }
-.brend_t{
-    font-size: 2em;
-    margin-left: 6%;
-    margin-top: 100px;
-}
-.brend_boxs{
-    width: 80vw;
-    height: 10vw;
-    border: 1px solid #ccc;
-    border-radius: 30px;
-    margin: 5% auto;
-    overflow: hidden;
-  display: flex;
-  justify-content: space-around;
-}
-.brend_box{
+
+.brends_title {
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 40px;
     display: flex;
     align-items: center;
+    color: #001025;
+    margin-bottom: 50px;
+}
+
+.brends_box {
+    width: 80vw;
+    height: 132px;
+    border-radius: 30px;
+    border: 3px solid #f8f8f8;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    overflow: hidden;
+}
+
+.brend_app,
+.brend_sam,
+.brend_hua,
+.brend_artel,
+.brend_mi {
+    width: 20vw;
+    height: 100vh;
+    border: 1px solid #f8f8f8;
+    align-items: center;
     justify-content: center;
-    width: 15vw;
+    display: flex;
 }
-.brend_box img{
-    width: 25%;
+
+.brend_artel_text {
+    font-size: 34px;
+    color: #ababab;
 }
-.brend_box img:nth-child(1),.brend_box img:nth-child(5){
-width:10vw;
+
+.brend_app:hover,
+.brend_sam:hover,
+.brend_hua:hover,
+.brend_artel:hover,
+.brend_mi:hover {
+    background-color: #FF8892;
 }
-.brend_box:hover{
+/* .brend_logos img:hover{
+    
     background-color: #FF8892;
     z-index: 8;
+} */
+
+.apple{
+    width: 25%;
+    padding: 20px;
+    margin: 0;
 }
+.apple:hover{
+    background-color: #FF6875;
+}
+/* .brend_logos img{
+    width: 15%;
+} */
 .main_f{
     background-color: #3A3330;
 }
@@ -288,6 +325,25 @@ background-color: #FF6875;
         .footer_links2{
             width: 80vw;
         }
+    
+    .brend_sam img,
+    .brend_hua img,
+    .brend_artel img{
+        width: 100px;
+    }
+    .footer1{
+        display: block;
+    } .footer_right{
+        width: 80vw}
+        .footer_right_btn{
+            width: 30vw;}
+            
+
+}
+@media(max-width:970px){
+    .brends_logo img{
+
+    }
 }
 @media(min-width:800px){
 
@@ -298,7 +354,14 @@ background-color: #FF6875;
 @media(max-width:800px){
     .second_footer{
         margin-bottom: 70px;
-
+    }
+}
+@media(max-width:600px){
+    .footer{
+        padding: 0;
+    }
+    .brends_title {
+        font-size: 24px;
     }
 }
 @media(max-width:500px){

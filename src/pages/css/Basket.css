@@ -68,9 +68,10 @@
 }
 .product_name{
   text-align: left;
-  width: 15vw;
+  /* width: 15vw; */
 }
 .ordered_i{
+  width: 30vw;
   position: relative;
   display: flex;
   align-items: center;
