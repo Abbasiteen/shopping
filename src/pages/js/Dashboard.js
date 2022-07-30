@@ -4,6 +4,10 @@ import { TbShoppingCartPlus } from 'react-icons/tb'
 import card_img from '../img/camera.png'
 import carousel from '../img/carousel.png'
 import camer from '../img/camer.png'
+import card_btn from '../img/card_btn.png'
+// import camer from '../img/camer.png'
+// import camer from '../img/camer.png'
+// import camer from '../img/camer.png'
 import Form from 'react-bootstrap/Form';
 
 import '../css/Dashboard.css'
@@ -96,7 +100,7 @@ if(push){
               <option value="3">3шт</option>
             </Form.Select>
               <div className='card_btnn' onClick={()=>this.shop(item.name,item.Image,item.price,item.skidka)}>
-                <button className='btnn'><TbShoppingCartPlus/></button>
+                <img src={card_btn} className='btnn' />
               </div>
             </div>
           </div>}})} 
@@ -126,7 +130,7 @@ if(push){
               <option value="3">3шт</option>
             </Form.Select>
               <div className='card_btnn' onClick={()=>this.shop(item.name,item.Image,item.price,item.skidka)}>
-                <button className='btnn'><TbShoppingCartPlus/></button>
+                <img src={card_btn} className='btnn' />
               </div>
             </div>
               </div>
@@ -225,7 +229,7 @@ if(push){
               <option value="3">3шт</option>
             </Form.Select>
               <div className='card_btnn' onClick={()=>this.shop(item.name,item.Image,item.price,item.skidka)}>
-                <button className='btnn'><TbShoppingCartPlus/></button>
+                <img src={card_btn} className='btnn' />
               </div>
             </div>
             </div>
