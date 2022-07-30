@@ -324,6 +324,14 @@
         width: 154px;
         height: 286px;
     }
+    .famous_cards{
+        grid-template-columns: 190px 190px 190px 190px 190px;
+        gap: 20px 18px;
+    }
+    .camer_card{
+        width: 190px;
+        height: 152px;
+    }
     .xit_card{
         width: 154px;
         height: 305px;
@@ -387,6 +395,25 @@
     }
     .famous_title {
         font-size: 14px;
+    }
+    .famous_cards{
+        grid-template-columns: 160px 160px 160px 160px 160px;
+        gap: 15px 13px;
+    }
+    .card_select{
+        width: 55px !important;
+        height: 20px;
+        padding: 1px 2px;
+        font-size: 8px !important;
+    }
+    .btnn{
+        width: 30px;
+        height: 30px;
+        font-size: 15px;
+    }
+    .camer_card{
+        width: 160px;
+        height: 120px;
     }
     .xit_title_t {
         font-size: 14px;

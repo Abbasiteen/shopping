@@ -4,16 +4,10 @@ import { TbShoppingCartPlus } from 'react-icons/tb'
 import card_img from '../img/camera.png'
 import carousel from '../img/carousel.png'
 import camer from '../img/camer.png'
-import Select from 'react-select';
 import Form from 'react-bootstrap/Form';
 
 import '../css/Dashboard.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-const options = [
-  { value: '1 шт.', label: '1шт.' },
-  { value: '2 шт.', label: '2 шт.' },
-  { value: '3 шт.', label: '3 шт.' }
-]
 const cards=require("../js/json")
 export default class Dashboard extends Component { 
   state={

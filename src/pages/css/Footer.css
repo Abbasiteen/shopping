@@ -242,6 +242,11 @@ background-color: #FF6875;
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
+    position: fixed;
+    bottom: 0;
+    font-size: 20px;
+    background-color: #F5F8FA;
+    border: 2px solid #E4E4E4;
 }
 .footer_menu a{
     /* width: 60px; */
@@ -285,12 +290,16 @@ background-color: #FF6875;
         }
 }
 @media(min-width:800px){
+
     .footer_menu{
         display: none !important;
     }
 }
 @media(max-width:800px){
+    .second_footer{
+        margin-bottom: 70px;
 
+    }
 }
 @media(max-width:500px){
 
