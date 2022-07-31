@@ -23,10 +23,10 @@ export default class Dashboard extends Component {
       var data1={
       "name":name,
       "img":img,
-  "price":price,
-  "skidka":skidka,
-  "count":1
-}
+      "price":price,
+      "skidka":skidka,
+      "count":1
+      }
 if(this.state.buy[0]==undefined){
 push=true;
 }else{

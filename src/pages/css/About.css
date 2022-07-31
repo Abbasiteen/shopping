@@ -302,4 +302,38 @@ body{
     .why_2{
         display: block;
     }
+    .why_2_title {
+        margin-left: 30px;
+        padding-top: 30px;
+        font-size: 20px;
+    }
+    .why_2{
+        border-radius: 30px;
+        height: 50vh;   
+    }
+    .why_2_cards {
+        grid-template-columns: 150px 150px 150px;
+        gap: 10px;
+    }
+    .why_2_card{
+        height: 150px;
+        border-radius: 30px;
+    }
+    .why_2_icon{
+        width: 30px;
+        height: 30px;
+        font-size: 15px;
+        margin-top: 15px;
+        margin-left: 15px;
+    }
+    .why_2_p1{
+        font-size: 10px;
+        margin: 10px 15px;
+    }
+    .why_2_p2 {
+        /* width: 18vw; */
+        margin-top: 5px;
+        margin-left: 15px;
+        font-size: 8px;
+    }
 }

@@ -11,17 +11,28 @@ export default class Error extends Component {
         <div className='products'>
           <div className='products_title'>
               <a href='/'>
+              < div className = 'products_text' >
                 <span className='TiArrowLeftThick'><TiArrowLeftThick/></span>
                 <p className='products_title_t'>Товары</p>
+              </div>
+
               </a>
           </div>
           <div className='products_main'>
           <div className='products_imgs'>
             <div className='products_img1'>
-              <img src={product2} />
-              <img src={product2} />
+              <img className='products_i' src={product2} />
+              <img className='products_i' src={product2} />
             </div>
-            <img src={product1} />
+            <img className='products_i2' src={product1} />
+
+          </div>
+          <div className='products_imgs2'>
+            <img className='products_i2_2' src={product1} />
+            <div className='products_img1_2'>
+              <img className='products_i2' src={product2} />
+              <img className='products_i2' src={product2} />
+            </div>
 
           </div>
           <div className='products_right'>
@@ -43,6 +54,7 @@ export default class Error extends Component {
           </div>
 
         </div>
+
       </div>
     )
   }

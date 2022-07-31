@@ -1,16 +1,22 @@
-.products_title a{
-  width: 17vw;
+.products_text {
+  /* width: 30vw; */
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding-top: 100px;
-  padding-left: 100px;
+  justify-content: left;
+  padding-top: 10%;
+  padding-left: 10%;
   text-decoration: none;
+}
+.products_title a{
+  text-decoration: none;
+}
+.TiArrowLeftThick{
+  margin-top: 3%;
 }
 .products_title_t{
   margin-top: 6%;
   font-size: 2em;
-  /* margin-left: 6%; */
+  margin-left: 1%;
   font-style: normal;
   text-decoration: none;
   color: #000;
@@ -29,23 +35,96 @@
   align-items: center;
   justify-content: space-between;
 }
-.products_img1{
-  /* width: 50px;*/
-  line-height: 170px;
+.products_i{
+  width: 12vw;
+  margin-top: 2px;
+}
+.products_i2 {
+  width: 30vw;
 }
 .product_price{
-  width: 15vw;
+  /* width: 15vw; */
   display: flex;
   align-items: center;
   justify-content: space-between;
   /* color: #359740; */
 }
+.amount_btn{
+  margin-top: 5%;
+}
 .push_busket {
-  width: 361px;
+  width: 25vw;
   height: 54px;
 
   background: #359740;
   color: #fff;
   border-radius: 32px;
   border: none
+}
+.products_right{
+  width: 25vw;
+}
+.products_imgs2{
+  display: none;
+}
+@media(max-width:800px){
+  .products_title a{
+    width: 35vw;
+  }
+  .products_main{
+   width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+  .products_imgs{
+    width: 85%;
+    margin: 0 auto;
+  }
+  .products_i2{
+    width: 60vw;
+  }
+  .products_i{
+    width: 20vw;
+  }
+  .products_right{
+    width: 80vw;
+    margin: 5% auto;
+  }
+  .push_busket{
+    width: 75vw;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .product_price{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+}
+@media(max-width:500px){
+  .products_imgs{
+    display: none;
+  }
+  .products_imgs2{
+    display: block;
+  }
+  .products_i2_2{
+    width: 90vw;
+    display: flex;
+    margin: 0 auto;
+  }
+  .products_img1_2{
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5% auto;
+  }
+  .products_i2{
+    width: 40vw;
+  }
 }

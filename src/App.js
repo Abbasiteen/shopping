@@ -19,6 +19,7 @@ import { FiSearch } from 'react-icons/fi'
 import { AiOutlineShoppingCart } from 'react-icons/ai';
 import logo from './pages/img/logo.png'
 import card_img from '../src/pages/img/camera.png'
+import card_btn from '../src/pages/img/card_btn.png'
 import { TbShoppingCartPlus } from 'react-icons/tb'
 import Select from 'react-select';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
@@ -36,8 +37,42 @@ const cards = require("./pages/js/json")
 export default class App extends Component {
    state = {
      show: true,
-     cards:cards
+     cards:cards,
+     data:cards,
+     buy:[]
    }
+       shop = (name, img, price, skidka) => {
+         var push = true;
+         var data1 = {
+           "name": name,
+           "img": img,
+           "price": price,
+           "skidka": skidka,
+           "count": 1
+         }
+         if (this.state.buy[0] == undefined) {
+           push = true;
+         } else {
+           for (var i = 0; i < this.state.buy.length; i++) {
+             if (this.state.buy[i].name === data1.name) {
+               this.state.buy[i].count++
+               push = false;
+             }
+           }
+         }
+         if (push) {
+           this.state.buy.push(data1)
+         }
+         localStorage.setItem("names", JSON.stringify(this.state.buy));
+       }
+       componentDidMount() {
+         if (JSON.parse(localStorage.getItem("names")) !== null) {
+           this.setState({
+             buy: JSON.parse(localStorage.getItem("names"))
+           })
+         }
+         //  console.log(this.shop)
+       }
    search = () => {
      if (document.querySelector('.header_inputs').value === '') {
        this.setState({
@@ -134,6 +169,7 @@ export default class App extends Component {
         <div>{ this.state.cards.map((item,key)=>{
           if (item.name.includes(document.querySelector('.header_inputs').value)) {
             return <div>
+          <div className='all_cards'>
               <div className='xit_cards' style={{display: 'flex'}}>
               <div className='xit_card'>
             <img src={card_img} alt='' className='card_imgg' />
@@ -144,13 +180,13 @@ export default class App extends Component {
             <div className='card_footer'>
               <Select placeholder='1шт.' className='card_amounts' options={options} />
               <div className='card_btnn' onClick={() => this.shop(item.name, item.Image, item.price, item.skidka)}>
-                <button className='btnn'><TbShoppingCartPlus/></button>
+                <img src={card_btn} className='btnn' />
               </div>
-            </div>
-            </div>
-            </div>
-            </div>
-          
+              </div>
+              </div>
+              </div>
+          </div>
+          </div>
           }
         })
         }</div>

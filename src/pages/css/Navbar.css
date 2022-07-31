@@ -68,13 +68,15 @@
     justify-content: center;
     /* opacity: 1; */
 }
-.basket{
+.busket_text {
     width: 5.2vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.basket p {
+.basket_text a{
+    text-decoration: none;
+    
     padding-top: 18px;
 }
 

@@ -35,12 +35,13 @@ export default class Navbar extends Component {
       <input className='header_inputs' onKeyUp={this.search} placeholder='Что желаете найти?'/>
       <span className='FiSearch'><FiSearch/></span> 
     </div>
-    <a href='/Ordered'>
-    <div className='basket'>
-      <span><AiOutlineShoppingCart/></span>
-      <p>Корзина</p>
+
+    <div className='busket_text'>
+      <a href='/Ordered'>
+        <span><AiOutlineShoppingCart/></span>
+        <p>Корзина</p>
+      </a>
     </div>
-    </a>
   </div>
 </div>
 <div className='navbar_2'>

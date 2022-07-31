@@ -15,7 +15,7 @@
 }
 
 .brends_box {
-    /* width: 80vw; */
+    width: 80vw;
     height: 132px;
     border-radius: 30px;
     border: 3px solid #f8f8f8;
@@ -33,7 +33,7 @@
 .brend_hua,
 .brend_artel,
 .brend_mi {
-    width: 450px;
+    width: 20vw;
     height: 100vh;
     border: 1px solid #f8f8f8;
     align-items: center;
@@ -157,14 +157,23 @@
     margin-left: 25px;
 }
 .footer_icons{
-    width: 10vw;
+    width: 15vw;
     font-size: 25px;
     color: #fff;
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: 10px;
-    margin-right: 10px;
+    margin-right: -20px;
+}
+.footer_icons span {
+    border: 1px solid;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .footer_end{
     width: 90vw;
@@ -247,7 +256,7 @@ background-color: #FF6875;
     justify-content: space-between;
 }
 .footer2_icons{
-    width: 20vw;
+    width: 25vw;
     font-size: 25px;
     color: #fff;
     display: flex;
@@ -255,6 +264,15 @@ background-color: #FF6875;
     justify-content: space-between;
     margin-top: 10px;
     margin-right: 10px;
+}
+.footer2_icons span{
+    border: 1px solid;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .footer_links2{
     width: 70vw;
@@ -327,11 +345,11 @@ background-color: #FF6875;
             width: 80vw;
         }
     
-    /* .brend_sam img,
+    .brend_sam img,
     .brend_hua img,
     .brend_artel img{
         width: 100px;
-    } */
+    }
     .footer1{
         display: block;
     } .footer_right{
@@ -355,6 +373,18 @@ background-color: #FF6875;
 @media(max-width:800px){
     .second_footer{
         margin-bottom: 70px;
+    }
+    .footer2_icons{
+        font-size: 15px;
+    }
+    .footer2_icons span {
+        border: 1px solid;
+        border-radius: 50px;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 @media(max-width:600px){

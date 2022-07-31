@@ -86,42 +86,39 @@ this.state.buy.splice(key,1)
     return (
       <div>
         <div className='Basket'>
-              < div className = 'order_title' >
-                <a href='/'>
-                  <span className='TiArrowLeftThick'><TiArrowLeftThick/></span>
+            <div className='ordered_t'>
+                <a href='/' className='order_title'>
+                  <span className='TiArrowLeftThick2'><TiArrowLeftThick/></span>
                   <p className='basket_title_t'>Товары</p>
                 </a>
-                <p className='order_amount' >{this.state.buy.length}предмета</p>
-              </div>
-        
+                  <p className='order_amount' >{this.state.buy.length}предмета</p>
+            </div>
           <div className='order_main'>
             <div className='order_main_l'>
             <div className='main_l_header'>
               <div className='header_t'>
                 <p>PRODUCT DETAILS</p>
-              <div className='main_header_text'>
-                <p>AMOUNT</p>
-                <p>PRICE</p>
-                <p>TOTAL</p>
-              </div>
+              <div className='main_header_text'><p>AMOUNT</p><p>PRICE</p><p>TOTAL</p></div>
               </div>
               <div className='ordered_main_card'>
                 {this.state.buy.map((item,key)=>{
                 return <div className='ordered'>
                   <div className='ordered_img'>
+                    <div className='product_title'><p>PRODUCT DETAILS</p></div>
                     <div className='ordered_i'>
                       <img src={ordered} alt=''/>
                       <p className='ordered_delate' onClick={()=>{this.delete(key)}}>x</p>
                         <p className='product_name'>{item.name}</p>
                       
                     </div>
+                    <div className='main_header_text_media'><p>AMOUNT</p><p>PRICE</p><p>TOTAL</p></div>
                     <div className='order_amount_text'>
                       <div className='amount_btn' style={{color: '#359740'}}>
                     <span onClick={()=> this.plus(key)}><AiOutlinePlusCircle /></span>
                       <p>{item.count}</p>
                     <span onClick={()=> this.minus(key)} > < AiOutlineMinusCircle/> </span>
                   </div>
-                  <div className='ordered_amount'>
+                  <div className='ordered_amount2'>
                       <p>{item.price.toFixed(2)}</p>
                   </div>
                   <div className='ordered_amount'>

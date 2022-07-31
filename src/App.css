@@ -23,10 +23,18 @@
 .open_modal{
   display: block;
 }
+.all_cards{
+  width: 80vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  flex-wrap: wrap
+}
 @media(max-width:800px){
 .modal1{
   width: 100vw;
-  height: 86vh;
+  height: 92vh;
   background-color: rgba(129, 129, 129, 0.553);
   display: none;
   /* margin-top: 100px; */
