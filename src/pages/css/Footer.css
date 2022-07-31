@@ -15,7 +15,7 @@
 }
 
 .brends_box {
-    width: 80vw;
+    /* width: 80vw; */
     height: 132px;
     border-radius: 30px;
     border: 3px solid #f8f8f8;
@@ -33,7 +33,7 @@
 .brend_hua,
 .brend_artel,
 .brend_mi {
-    width: 20vw;
+    width: 450px;
     height: 100vh;
     border: 1px solid #f8f8f8;
     align-items: center;
@@ -59,14 +59,14 @@
     z-index: 8;
 } */
 
-.apple{
+/* .apple{
     width: 25%;
     padding: 20px;
     margin: 0;
 }
 .apple:hover{
     background-color: #FF6875;
-}
+} */
 /* .brend_logos img{
     width: 15%;
 } */
@@ -327,11 +327,11 @@ background-color: #FF6875;
             width: 80vw;
         }
     
-    .brend_sam img,
+    /* .brend_sam img,
     .brend_hua img,
     .brend_artel img{
         width: 100px;
-    }
+    } */
     .footer1{
         display: block;
     } .footer_right{

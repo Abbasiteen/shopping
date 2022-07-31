@@ -1,16 +1,18 @@
 .inform{
-    width: 70vw;
+    /* width: 80vw; */
     margin: 0 auto;
 }
 .inform a{
     text-decoration: none;
 }
 .inform_title{
-    width: 25vw;
+    /* width: 25vw; */
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    /* align-items: center; */
+    /* justify-content: space-between; */
+    text-align: center;
     margin-top: 137px;
+    margin-left: 10%;
 }
 .inform_t{
     font-family: 'Jost';
@@ -18,6 +20,7 @@
     font-weight: 600;
     font-size: 36px;
     color: #000000;
+    margin-left: 10px;
 }
 .TiArrowLeftThick{
     width: 32px;
@@ -28,16 +31,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 15px;
 }
 .inform_main{
-    width: 70vw;
+    width: 80vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 0 auto;
 }
 .form{
-    width: 40vw;
-    height: 795px;
+    width: 47%;
+    /* height: 795px; */
     background: #FFFFFF;
     border: 1px solid #EFEFEF;
     box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.08);
@@ -55,36 +60,36 @@
     margin-top: 30px;
 
 }
-.form_name{
-    padding-top: 60px;
-    /* padding-left: 43px; */
-
-}
 .input{
-    width: 30vw;
+    width: 85%;
     height: 66px;
     /* padding-left: 43px; */
     /* left: 362px; */
     /* top: 476px; */
-    margin: 0 42px; 
+    /* margin: 0 42px; */
+    display: flex;
+    margin: 0 auto; 
     background: rgba(196, 196, 196, 0.2);
     border: 1px solid #EFEFEF;
     border-radius: 6px;
     
 }
 .form_btn{
-    width: 30vw;
+    width: 80%;
     height: 66px;
     background: #359740;
     color: #fff;
     border: 1px solid #EFEFEF;
     border-radius: 6px;
-    margin: 75px 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 25px auto;
     
 }
 .inform_card{
-    width: 35vw;
-    height: 470px;
+    width: 47%;
+    /* height: 470px; */
     background: #FFFFFF;
     box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.08);
     border-radius: 6px;
@@ -100,4 +105,22 @@
 }
 .card_end2{
     color: #00000084;
+}
+@media(max-width:800px){
+    .inform_main{
+        display: block;
+    }
+    .form{
+        width: 100%;
+    }
+    .inform_card{
+        width: 100%;
+        margin-top: 5%;
+    }
+    .TiArrowLeftThick{
+        margin-top: 5px;
+    }
+    .inform_t{
+        font-size: 20px;
+    }
 }
