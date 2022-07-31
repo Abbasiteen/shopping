@@ -109,12 +109,12 @@ export default class App extends Component {
       <input className='header_inputs' onKeyUp={this.search} placeholder='Что желаете найти?'/>
       <span className='FiSearch'><FiSearch/></span> 
     </div>
-    <a href='/Ordered'>
-    <div className='basket'>
-      <span><AiOutlineShoppingCart/></span>
-      <p>Корзина</p>
+    <div className='busket_text'>
+      <a href='/Ordered'>
+        <span><AiOutlineShoppingCart/></span>
+        <p className='busket_text_p'>Корзина</p>
+      </a>
     </div>
-    </a>
   </div>
 </div>
 <div className='navbar_2'>
@@ -140,6 +140,8 @@ export default class App extends Component {
       </select>
       </div>
 </div>
+      {/* <Dashboard/> */}
+
 
       <div className='modal1'>
          <ul>
@@ -151,7 +153,7 @@ export default class App extends Component {
          </ul>
       </div>
 
-      {this.state.show?(
+       {this.state.show?( 
         <Router>
             <Routes>
               <Route  path='/' element={<Dashboard/>}></Route>
@@ -165,7 +167,8 @@ export default class App extends Component {
               <Route  path='/products' element={<Products/>}></Route>
               <Route  path='/Ordered' element={<Ordered/>}></Route>
             </Routes>
-        </Router>):(
+        </Router>
+        ):(
         <div>{ this.state.cards.map((item,key)=>{
           if (item.name.includes(document.querySelector('.header_inputs').value)) {
             return <div>
@@ -192,7 +195,11 @@ export default class App extends Component {
         }</div>
       
       )}
-
+      <About/>
+      <Contact/>
+      <Inform/>
+      <Ordered/>
+      <Products/>
         <Footer/>
       </div>
     )

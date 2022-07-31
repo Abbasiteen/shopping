@@ -40,10 +40,10 @@ export default class Footer extends Component {
               <img src={apple} alt='' />
             </div>
             <div className='brend_sam'>
-              <img src={samsung} alt=''/>
+              <img src={samsung}alt=''/>
             </div>
             <div className='brend_hua'>
-              <img src={huawe} alt='' />
+              <img src={huawe}alt='' />
             </div>
             <div className='brend_artel'>
               <h6 className='brend_artel_text'>artel</h6>

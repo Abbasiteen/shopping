@@ -31,6 +31,21 @@
   margin: 0 auto;
   flex-wrap: wrap
 }
+
+
+.busket_text a {
+  width: 5vw;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  text-decoration: none;
+  padding-top: 18px;
+  color: #000;
+}
+.busket_text_p{
+  margin-top: 3px;
+  /* bottom: 0; */
+}
 @media(max-width:800px){
 .modal1{
   width: 100vw;

@@ -15,7 +15,7 @@
 }
 
 .brends_box {
-    width: 80vw;
+    /* width: 80vw; */
     height: 132px;
     border-radius: 30px;
     border: 3px solid #f8f8f8;
@@ -24,7 +24,6 @@
     justify-content: space-between;
     margin-bottom: 100px;
     overflow: hidden;
-    overflow-x: scroll;
 
 }
 
@@ -396,7 +395,39 @@ background-color: #FF6875;
     }
 }
 @media(max-width:500px){
-
+    .brends_box{
+        border-radius: 15px;
+        height: 70px;
+        padding-right: 20px;
+        padding-left: 20px;
+        overflow-x: scroll;
+    }
+    .brend_app,
+    .brend_mi{
+        width: 40px;
+    }
+    .brend_mi img{
+        width: 40px;
+    }
+    .brend_sam,
+    .brend_hua,
+    .brend_artel{
+        width: 120px;
+    }
+    
+    .brend_app,
+    .brend_sam,
+    .brend_hua,
+    .brend_artel,
+    .brend_mi {
+        /* width: 20vw; */
+        height: 100vh;
+        border: 1px solid #f8f8f8;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        margin-left: 50px;
+    }
     .second_footer {
         /* height: 70vh !important; */
     }

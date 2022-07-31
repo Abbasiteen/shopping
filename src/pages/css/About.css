@@ -98,7 +98,7 @@ body{
     grid-template-columns:  375px 375px 375px;
     gap: 25px 23px;
     margin: 10% auto;
-    overflow: scroll;
+    /* overflow: scroll; */
 }
 .why_card{
     height: 300px;
@@ -259,6 +259,11 @@ body{
     margin-top: 15px;
     margin-left: 35px;
     font-size: 16px;
+}
+@media(max-width:1450px){
+    .why_cards{
+        overflow-x: scroll;
+    }
 }
 @media(max-width:1000px){
     .about_img {
