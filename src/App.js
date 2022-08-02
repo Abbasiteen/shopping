@@ -21,6 +21,7 @@ import logo from './pages/img/logo.png'
 import card_img from '../src/pages/img/camera.png'
 import card_btn from '../src/pages/img/card_btn.png'
 import { TbShoppingCartPlus } from 'react-icons/tb'
+import {axios} from 'axios'
 import Select from 'react-select';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import '../src/pages/css/Dashboard.css'
@@ -36,10 +37,20 @@ const openModal=()=> {
 const cards = require("./pages/js/json")
 export default class App extends Component {
    state = {
-     show: true,
+     show: true, 
      cards:cards,
      data:cards,
-     buy:[]
+     buy:[],
+     card1:[]
+   }
+   getCategory=()=>{
+    axios.get('http://shop.abrorjonaxmadov.uz/api/v1/products/').then(res=>{
+      {this.setState({data1: res.data1})}
+      console.log(data1: res.data1);
+    })
+   .catch(err=>{
+    console.log('musr');
+   })
    }
        shop = (name, img, price, skidka) => {
          var push = true;
