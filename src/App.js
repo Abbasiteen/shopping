@@ -43,15 +43,6 @@ export default class App extends Component {
      buy:[],
      card1:[]
    }
-   getCategory=()=>{
-    axios.get('http://shop.abrorjonaxmadov.uz/api/v1/products/').then(res=>{
-      {this.setState({data1: res.data1})}
-      console.log(data1: res.data1);
-    })
-   .catch(err=>{
-    console.log('musr');
-   })
-   }
        shop = (name, img, price, skidka) => {
          var push = true;
          var data1 = {
