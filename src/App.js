@@ -43,6 +43,17 @@ export default class App extends Component {
      buy:[],
      card1:[]
    }
+    getTokken=()=>{
+      var data={
+        "username": "admin",
+        "password": "testing321"
+      }
+      axios.post(`http://shop.abrorjonaxmadov.uz/auth/v1/login/`, data).then(res=>{
+        console.log(res.data);
+      }).catch(err=>{
+        console.log(err);
+      })
+    }
        shop = (name, img, price, skidka) => {
          var push = true;
          var data1 = {
@@ -197,6 +208,7 @@ export default class App extends Component {
         }</div>
       
       )}
+      <button onClick={()=>{ this.getTokken() }}>token</button>
       <About/>
       <Contact/>
       <Inform/>
