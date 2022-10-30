@@ -209,11 +209,11 @@ export default class App extends Component {
       
       )}
       <button onClick={()=>{ this.getTokken() }}>token</button>
-      <About/>
+      {/* <About/>
       <Contact/>
       <Inform/>
       <Ordered/>
-      <Products/>
+      <Products/> */}
         <Footer/>
       </div>
     )
